@@ -140,7 +140,7 @@ export PATH=/Library/Frameworks/Mapnik.framework/Programs:$PATH
 export PYTHONPATH=/Library/Frameworks/Mapnik.framework/Python:$PYTHONPATH
 
 # BASE-64 encode an image
-alias pngencode='openssl enc -base64 -in /path/to/your_file.png | tr -d '\n' | pbcopy'
+# alias pngencode='openssl enc -base64 -in $PATHNAME | tr -d '\n' | pbcopy'
 
 # Open Mapnik font folder
 alias mapnikfonts='open /Library/Frameworks/Mapnik.framework/Versions/2.0/unix/lib/mapnik2/fonts/'
