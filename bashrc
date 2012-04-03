@@ -74,7 +74,7 @@ alias lint='gjslint'
 # IRC
 alias irc='irssi'
 #Edit this file
-alias editalias='mvim ~/.bash_profile'
+alias editalias='mvim ~/.bashrc'
 #Edit hosts
 alias edithosts='mvim ~/.ssh/config'
 
@@ -145,3 +145,7 @@ export PYTHONPATH=/Library/Frameworks/Mapnik.framework/Python:$PYTHONPATH
 # Open Mapnik font folder
 alias mapnikfonts='open /Library/Frameworks/Mapnik.framework/Versions/2.0/unix/lib/mapnik2/fonts/'
 alias psql=/usr/local/pgsql-9.1/bin/psql
+
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
