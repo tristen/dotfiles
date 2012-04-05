@@ -1,0 +1,3 @@
+[submodule "janus/vim-afterimage"]
+	path = janus/vim-afterimage
+	url = https://github.com/tpope/vim-afterimage.git
