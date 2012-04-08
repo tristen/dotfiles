@@ -1,9 +1,7 @@
 # Customize Command Prompt
 PS1='$ '
 
-# colors #
-export GREP_OPTIONS='--color=auto'
-export CLICOLOR=1;
+export EDITOR='vim'
 
 # let autocomplete work with sudo
 complete -cf sudo
@@ -14,6 +12,11 @@ complete -cf sudo
 bind -f ~/.bash_keybindings
 # GIT Autocompletion
 source ~/.git-completion.sh
+
+# ---- Colors ---------------------------------------------------------
+
+export GREP_OPTIONS='--color=auto'
+export CLICOLOR=1;
 
 # ---- History --------------------------------------------------------
 

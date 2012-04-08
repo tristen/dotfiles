@@ -52,6 +52,7 @@ set expandtab
 
 autocmd BufRead *.bones set filetype=javascript
 autocmd BufRead *._ set filetype=html
+autocmd BufRead *.ejs set filetype=html
 autocmd BufRead *.less set filetype=css
 
 "" == Functions ===================================
