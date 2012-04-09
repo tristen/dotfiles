@@ -8,8 +8,10 @@ complete -cf sudo
 
 # Node Version Manager
 . ~/.nvm/nvm.sh
+
 # Key Bindings
 bind -f ~/.bash_keybindings
+
 # GIT Autocompletion
 source ~/.git-completion.sh
 
@@ -82,6 +84,12 @@ alias editalias='mvim ~/.bashrc'
 alias edithosts='mvim ~/.ssh/config'
 
 # == FUNCTIONS ========================================================
+
+function pngencode() {
+  # pngencode = BASE-64 encode an image
+  openssl enc -base64 -in $1 | tr -d '\n' | pbcopy
+}
+
 function xt() {
   # xt = eXTract, a wrapper to extract many different archive formats
   if [ -f $1 ] ; then
@@ -104,14 +112,6 @@ function xt() {
   fi
 }
 
-export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
-
-#Mapnik
-MAPNIK=/Library/Frameworks/Mapnik.framework
-  export PATH=$MAPNIK/Programs:$PATH
-  export NODE_PATH=$MAPNIK/Node:$NODE_PATH
-  export PYTHONPATH=$MAPNIK/Python:$PYTHONPATH
-
 # PATH
 export PATH="/usr/local/bin:/usr/bin:$PATH"
 
@@ -132,6 +132,14 @@ alias gh='cd ~/github'
 
 EVENT_NOKQUEUE=1
 
+export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
+
+#Mapnik
+MAPNIK=/Library/Frameworks/Mapnik.framework
+  export PATH=$MAPNIK/Programs:$PATH
+  export NODE_PATH=$MAPNIK/Node:$NODE_PATH
+  export PYTHONPATH=$MAPNIK/Python:$PYTHONPATH
+
 # Postgres with PostGIS support
 export PATH=/usr/local/pgsql/bin/:$PATH
 export PATH=$HOME/local/node/bin:$PATH
@@ -141,9 +149,6 @@ export PATH=~/bin:$PATH
 # Settings for Mapnik.framework Installer to enable Mapnik programs and python bindings
 export PATH=/Library/Frameworks/Mapnik.framework/Programs:$PATH
 export PYTHONPATH=/Library/Frameworks/Mapnik.framework/Python:$PYTHONPATH
-
-# BASE-64 encode an image
-# alias pngencode='openssl enc -base64 -in $PATHNAME | tr -d '\n' | pbcopy'
 
 # Open Mapnik font folder
 alias mapnikfonts='open /Library/Frameworks/Mapnik.framework/Versions/2.0/unix/lib/mapnik2/fonts/'

@@ -1,2 +1,0 @@
-call janus#disable_plugin('nerdtree')
-call janus#disable_plugin('supertab')
