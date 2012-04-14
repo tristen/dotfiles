@@ -5,3 +5,7 @@ ehthumbs.db
 Icon?
 Thumbs.db
 .thumb.png
+
+# Vim #
+# ######################
+*.swp
