@@ -52,6 +52,10 @@ set lbr
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
+" Nerdtree
+noremap  <F2> :NERDTreeToggle<cr>
+inoremap <F2> <esc>:NERDTreeToggle<cr>
+
 " == KEY BINDINGS =========================================
 
 "Disable the arrow keys to learn the hard way

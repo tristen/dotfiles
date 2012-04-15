@@ -38,6 +38,7 @@ alias mv='mv -vi'
 alias rm='rm -v'
 alias vlc='vlc --extraintf http'
 alias xclip='xclip -selection c'
+alias tmux='tmux -2'
 
 # ---- Shortcuts  -----------------------------------------------------
 
