@@ -52,6 +52,12 @@ set lbr
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
+" Ctrlp
+let g:ctrlp_map = '<c-p>'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+
 " Nerdtree
 noremap  <F2> :NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeToggle<cr>
@@ -76,8 +82,6 @@ if has('gui_macvim') && has('gui_running')
 
   omap <D-]> >>
   omap <D-[> <<
-
-
 else
   vmap <A-]> >gv
   vmap <A-[> <gv

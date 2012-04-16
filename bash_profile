@@ -2,6 +2,7 @@
 PS1='$ '
 
 export EDITOR='vim'
+export CUTE_BATTERY_INDICATOR=1
 
 # let autocomplete work with sudo
 complete -cf sudo
@@ -38,7 +39,6 @@ alias mv='mv -vi'
 alias rm='rm -v'
 alias vlc='vlc --extraintf http'
 alias xclip='xclip -selection c'
-alias tmux='tmux -2'
 
 # ---- Shortcuts  -----------------------------------------------------
 
