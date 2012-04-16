@@ -8,4 +8,6 @@ Thumbs.db
 
 # Vim #
 # ######################
-*.swp
+.*.sw[a-z]
+*.un~
+Session.vim
