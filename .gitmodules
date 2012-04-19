@@ -55,3 +55,6 @@
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/xterm-color-table"]
+	path = vim/bundle/xterm-color-table
+	url = https://github.com/guns/xterm-color-table.vim.git
