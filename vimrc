@@ -65,6 +65,9 @@ inoremap <F2> <esc>:NERDTreeToggle<cr>
 
 " == KEY BINDINGS =========================================
 
+" <leader> key = ,
+let mapleader = ','
+
 " Disable the arrow keys to learn the hard way
 noremap <Up> <nop>
 noremap <Down> <nop>

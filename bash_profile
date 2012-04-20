@@ -75,6 +75,7 @@ alias ......='cd ../../../../..'
 alias gl='git log --oneline --decorate'
 alias gd='git diff --word-diff'
 alias gs='git status -sb'
+alias gp='git pull'
 
 #Linting
 alias lint='gjslint'
