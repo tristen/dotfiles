@@ -52,3 +52,6 @@
 [submodule "vim/bundle/xterm-color-table"]
 	path = vim/bundle/xterm-color-table
 	url = https://github.com/guns/xterm-color-table.vim.git
+[submodule "vim/bundle/vitality"]
+	path = vim/bundle/vitality
+	url = https://github.com/sjl/vitality.vim.git
