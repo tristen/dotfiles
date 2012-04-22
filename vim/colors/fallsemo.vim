@@ -51,8 +51,6 @@ hi Underlined     guifg=#808080 ctermfg=244  gui=underline cterm=underline
 hi Title          guifg=#EF5939 ctermfg=203  gui=none cterm=none
 hi Todo           guifg=#93A1A1 ctermfg=247  guibg=none ctermbg=none    gui=underline cterm=underline
 hi WarningMsg     guifg=#FFFFFF ctermfg=231  guibg=#262626 ctermbg=235  gui=bold cterm=bold
-
-" TODO Highlight line
 hi CursorLine     guibg=#1C1C1C ctermbg=234 cterm=none
 
 hi link Number        Boolean
