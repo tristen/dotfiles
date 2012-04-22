@@ -28,7 +28,7 @@ set clipboard=unnamed
 set vb t_vb=
 
 " Stylez
-colorscheme molokai
+colorscheme fallsemo
 if has('gui_running')
   colorscheme molokai
   set guifont=Droid\ Sans\ Mono:h12
@@ -63,10 +63,10 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 noremap  <F2> :NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeToggle<cr>
 
-" == KEY BINDINGS =========================================
+" TagBar
+noremap  <F8> :TagbarToggle<cr>
 
-" <leader> key = ,
-let mapleader = ','
+" == KEY BINDINGS =========================================
 
 " Disable the arrow keys to learn the hard way
 noremap <Up> <nop>

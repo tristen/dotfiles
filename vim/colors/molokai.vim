@@ -14,15 +14,6 @@ if exists('syntax_on')
 endif
 let g:colors_name = 'molokai'
 
-" Vim >= 7.0 specific colors
-if version >= 700
-    hi CursorLine     guibg=#2d2d2d
-    hi CursorColumn   guibg=#2d2d2d
-    hi MatchParen     guifg=#f6f3e8 guibg=#857b6f gui=bold
-    hi Pmenu 		      guifg=#f6f3e8 guibg=#444444
-    hi PmenuSel 	    guifg=#000000 guibg=#cae682
-endif
-
 if has('gui_runnning')
     hi Boolean        guifg=#AE81FF
     hi Character      guifg=#E6DB74
@@ -52,7 +43,6 @@ if has('gui_runnning')
     hi Keyword        guifg=#F92672 gui=bold
     hi Label          guifg=#E6DB74 gui=none
     hi Macro          guifg=#C4BE89 gui=italic
-    hi SpecialKey     guifg=#66D9EF gui=italic
     hi MatchParen     guifg=#000000 guibg=#FD971F gui=bold
     hi ModeMsg        guifg=#E6DB74
     hi MoreMsg        guifg=#E6DB74

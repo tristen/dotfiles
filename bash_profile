@@ -1,8 +1,8 @@
 # Customize Command Prompt
+#
 PS1='$ '
 
 export EDITOR='vim'
-export CUTE_BATTERY_INDICATOR=1
 
 # let autocomplete work with sudo
 complete -cf sudo
@@ -76,6 +76,7 @@ alias gl='git log --oneline --decorate'
 alias gd='git diff --word-diff'
 alias gs='git status -sb'
 alias gp='git pull'
+alias oc='octogit'
 
 #Linting
 alias lint='gjslint'

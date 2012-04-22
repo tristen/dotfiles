@@ -7,9 +7,6 @@
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "vim/bundle/vim-css-color"]
-	path = vim/bundle/vim-css-color
-	url = https://github.com/ap/vim-css-color.git
 [submodule "vim/bundle/vim-snipmate"]
 	path = vim/bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
@@ -55,3 +52,9 @@
 [submodule "vim/bundle/vitality"]
 	path = vim/bundle/vitality
 	url = https://github.com/sjl/vitality.vim.git
+[submodule "vim/bundle/vim-css-color"]
+	path = vim/bundle/vim-css-color
+	url = https://github.com/skammer/vim-css-color.git
+[submodule "vim/bundle/tagbar"]
+	path = vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
