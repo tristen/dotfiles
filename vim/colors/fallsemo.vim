@@ -23,7 +23,7 @@ hi Error          guifg=#960050 ctermfg=89   guibg=#1E0010 ctermbg=233  gui=none
 hi Function       guifg=#A6E22E ctermfg=148  gui=none cterm=none
 hi Directory      guifg=#A6E22E ctermfg=148  gui=bold cterm=bold
 hi SignColumn     guifg=#A6E22E ctermfg=148  guibg=#232526 ctermbg=235  gui=none cterm=none
-hi Conditional    guifg=#FF5F5F ctermfg=203  gui=bold cterm=bold
+hi Conditional    guifg=#FF5F87 ctermfg=204  gui=bold cterm=bold
 hi ErrorMsg       guifg=#FF5F5F ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
 hi Statement      guifg=#FF5F5F ctermfg=203
 hi Tag            guifg=#FF5F5F ctermfg=203  gui=italic cterm=none
