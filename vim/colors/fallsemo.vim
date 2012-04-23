@@ -93,4 +93,6 @@ hi link htmlArg                 Function
 hi link cssImportant  Error
 hi link cssStringQ    Boolean
 hi link cssAttr       Boolean
+hi link cssColor      Boolean
+hi link cssDefinition Boolean
 hi link cssProp       Define
