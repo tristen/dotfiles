@@ -27,6 +27,9 @@ set clipboard=unnamed
 " disables both audio & visual bell
 set vb t_vb=
 
+" Don't swap in my working directory
+set directory^=$HOME/.vim/swap//
+
 " Stylez
 colorscheme fallsemo
 if has('gui_running')
