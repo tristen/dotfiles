@@ -43,18 +43,17 @@ hi MatchParen     guifg=#000000 ctermfg=16   guibg=#FD971F ctermbg=208  gui=bold
 hi ModeMsg        guifg=#E6DB74 ctermfg=186  gui=none cterm=none
 hi PmenuSel                                  guibg=#808080 ctermbg=244  gui=none cterm=none
 hi Search         guifg=#FFFFFF ctermfg=231  guibg=#455354 ctermbg=239  gui=none cterm=none
+hi Underlined     guifg=#808080 ctermfg=244  gui=underline cterm=underline
+hi Title          guifg=#EEEEEE ctermfg=255  gui=none cterm=none
+hi Todo           guifg=#FFFFFF ctermfg=15   guibg=none ctermbg=none    gui=underline cterm=underline
+hi WarningMsg     guifg=#FFFFFF ctermfg=231  guibg=#262626 ctermbg=235  gui=bold cterm=bold
+hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=none
 
 " Editor Aesthetics
 hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
 hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=none cterm=none
 hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=none cterm=none
 hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234  gui=none cterm=none
-
-hi Underlined     guifg=#808080 ctermfg=244  gui=underline cterm=underline
-hi Title          guifg=#EEEEEE ctermfg=255  gui=none cterm=none
-hi Todo           guifg=#93A1A1 ctermfg=247  guibg=none ctermbg=none    gui=underline cterm=underline
-hi WarningMsg     guifg=#FFFFFF ctermfg=231  guibg=#262626 ctermbg=235  gui=bold cterm=bold
-hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=none
 
 hi link Number        Boolean
 hi link Float         Boolean
@@ -90,9 +89,19 @@ hi link htmlEndTag              Tag
 hi link htmlArg                 Function
 
 " css
-hi link cssImportant  Error
-hi link cssStringQ    Boolean
-hi link cssAttr       Boolean
-hi link cssColor      Boolean
-hi link cssDefinition Boolean
-hi link cssProp       Define
+hi link cssImportant            Error
+hi link cssStringQ              Boolean
+hi link cssAttr                 Boolean
+hi link cssFontAttr             Boolean
+hi link cssCommonAttr           Boolean
+hi link cssColor                Boolean
+hi link cssDefinition           Boolean
+hi link cssProp                 Define
+hi link cssTextProp             Define
+hi link cssFontProp             Define
+hi link cssBoxProp              Define
+hi link cssRenderProp           Define
+hi link cssColorProp            Define
+hi link cssTableProp            Define
+hi link cssUiProp               Define
+hi link cssGeneratedContentProp Define
