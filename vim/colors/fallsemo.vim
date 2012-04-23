@@ -19,7 +19,7 @@ hi Delimter       guifg=#8F8F8F ctermfg=245  gui=none cterm=none
 hi DiffAdd                                   guibg=#13354A ctermbg=236 gui=none cterm=none
 hi DiffChange     guifg=#89807D ctermfg=244  guibg=#4C4745 ctermbg=238  gui=none cterm=none
 hi DiffText                                  guibg=#4C4745 ctermbg=238  gui=italic cterm=none
-hi Error          guifg=#960050 ctermfg=89   guibg=#1E0010 ctermbg=233  gui=none cterm=none
+hi Error          guifg=#FF005F ctermfg=197   guibg=#1E0010 ctermbg=233  gui=none cterm=none
 hi Function       guifg=#A6E22E ctermfg=148  gui=none cterm=none
 hi Directory      guifg=#A6E22E ctermfg=148  gui=bold cterm=bold
 hi SignColumn     guifg=#A6E22E ctermfg=148  guibg=#232526 ctermbg=235  gui=none cterm=none
@@ -36,22 +36,24 @@ hi Identifier     guifg=#FFD700 ctermfg=220  gui=none cterm=none
 hi StorageClass   guifg=#FFD700 ctermfg=220  gui=italic cterm=none
 hi Ignore         guifg=#121212 ctermfg=233  gui=none cterm=none
 hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=none
-hi Define         guifg=#005FAF ctermfg=25   gui=none cterm=none
-hi Type           guifg=#005FAF ctermfg=25   gui=none cterm=none
-hi WildMenu       guifg=#005FAF ctermfg=25   guibg=#000000 ctermbg=16   gui=none cterm=none
-hi Special        guifg=#005FAF ctermfg=25   gui=italic cterm=none
+hi Define         guifg=#005FAF ctermfg=33   gui=none cterm=none
+hi Type           guifg=#005FAF ctermfg=33   gui=none cterm=none
+hi WildMenu       guifg=#005FAF ctermfg=33   guibg=#000000 ctermbg=16   gui=none cterm=none
+hi Special        guifg=#005FAF ctermfg=33   gui=italic cterm=none
 hi MatchParen     guifg=#000000 ctermfg=16   guibg=#FD971F ctermbg=208  gui=bold cterm=bold
 hi ModeMsg        guifg=#E6DB74 ctermfg=186  gui=none cterm=none
 hi PmenuSel                                  guibg=#808080 ctermbg=244  gui=none cterm=none
 hi Search         guifg=#FFFFFF ctermfg=231  guibg=#455354 ctermbg=239  gui=none cterm=none
-hi StatusLine     guifg=#455354 ctermfg=239  gui=none cterm=none
-hi StatusLineNC   guifg=#808080 ctermfg=244  guibg=#080808 ctermbg=234  gui=none cterm=none
-hi VertSplit      guifg=#808080 ctermfg=244  guibg=#080808 ctermbg=234  gui=bold cterm=bold
+
+hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
+hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=none cterm=none
+hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=none cterm=none
+
 hi Underlined     guifg=#808080 ctermfg=244  gui=underline cterm=underline
-hi Title          guifg=#EF5939 ctermfg=203  gui=none cterm=none
+hi Title          guifg=#EEEEEE ctermfg=255  gui=none cterm=none
 hi Todo           guifg=#93A1A1 ctermfg=247  guibg=none ctermbg=none    gui=underline cterm=underline
 hi WarningMsg     guifg=#FFFFFF ctermfg=231  guibg=#262626 ctermbg=235  gui=bold cterm=bold
-hi CursorLine     guibg=#1C1C1C ctermbg=234 cterm=none
+hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=none
 
 hi link Number        Boolean
 hi link Float         Boolean
@@ -77,3 +79,19 @@ hi link SpecialKey    Special
 hi link MoreMsg       ModeMsg
 hi link PmenuSbar     PmenuSel
 hi link VisualNOS     Visual
+
+" == Language Specific Highlighting =======================
+
+" html
+hi link htmlTag                 Tag
+hi link htmlSpecialTagName      Tag
+hi link htmlEndTag              Tag
+hi link htmlArg                 Function
+
+" css
+hi link cssImportant  Error
+hi link cssStringQ    Boolean
+hi link cssDefinition Boolean
+hi link cssAttr       Boolean
+hi link cssColor      Boolean
+hi link cssProp       Define
