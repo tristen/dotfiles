@@ -45,6 +45,7 @@ hi ModeMsg        guifg=#E6DB74 ctermfg=186  gui=none cterm=none
 hi PmenuSel                                  guibg=#808080 ctermbg=244  gui=none cterm=none
 hi Search         guifg=#FFFFFF ctermfg=231  guibg=#455354 ctermbg=239  gui=none cterm=none
 
+" Editor Aesthetics
 hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
 hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=none cterm=none
 hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=none cterm=none
@@ -91,7 +92,5 @@ hi link htmlArg                 Function
 " css
 hi link cssImportant  Error
 hi link cssStringQ    Boolean
-hi link cssDefinition Boolean
 hi link cssAttr       Boolean
-hi link cssColor      Boolean
 hi link cssProp       Define
