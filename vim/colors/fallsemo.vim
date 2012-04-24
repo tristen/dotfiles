@@ -27,7 +27,6 @@ hi Conditional    guifg=#FF5F87 ctermfg=204  gui=bold cterm=bold
 hi ErrorMsg       guifg=#FF5F5F ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
 hi Statement      guifg=#FF5F5F ctermfg=203
 hi Tag            guifg=#FF5F5F ctermfg=203  gui=italic cterm=none
-hi LineNr         guifg=#262626 ctermfg=235  gui=none cterm=none
 hi Comment        guifg=#465457 ctermfg=240
 hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
 hi FoldColumn     guifg=#465457 ctermfg=240  guibg=#000000 ctermbg=16   gui=none cterm=none
@@ -54,6 +53,7 @@ hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
 hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=none cterm=none
 hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=none cterm=none
 hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234  gui=none cterm=none
+hi LineNr         guifg=#303030 ctermfg=236  gui=none cterm=none
 
 hi link Number        Boolean
 hi link Float         Boolean
