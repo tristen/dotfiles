@@ -92,7 +92,7 @@ endif
 " == FUCTIONS =============================================
 
 " Show syntax highlighting groups for word under cursor
-function! <SID>SynStack()
+function! <SID>SynStack ()
   if !exists("*synstack")
     return
   endif
@@ -105,7 +105,7 @@ inoremap  <F3> :call <SID>SynStack()<CR>
 function! StripWhitespace ()
   exec ':%s/ \+$//gc'
 endfunction
-noremap ,s :call StripWhitespace ()<CR>
+noremap ,s :call StripWhitespace()<CR>
 
 " == TABS & FORMATTING ====================================
 

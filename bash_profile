@@ -144,9 +144,9 @@ MAPNIK=/Library/Frameworks/Mapnik.framework
   export NODE_PATH=$MAPNIK/Node:$NODE_PATH
   export PYTHONPATH=$MAPNIK/Python:$PYTHONPATH
 
-# Postgres with PostGIS support
-export PATH=/usr/local/pgsql/bin/:$PATH
-export PATH=$HOME/local/node/bin:$PATH
+## Postgres with PostGIS support
+#export PATH=/usr/local/pgsql/bin/:$PATH
+#export PATH=$HOME/local/node/bin:$PATH
 
 # ~/.bin executables
 export PATH=~/bin:$PATH
@@ -156,7 +156,6 @@ export PYTHONPATH=/Library/Frameworks/Mapnik.framework/Python:$PYTHONPATH
 
 # Open Mapnik font folder
 alias mapnikfonts='open /Library/Frameworks/Mapnik.framework/Versions/2.0/unix/lib/mapnik2/fonts/'
-alias psql=/usr/local/pgsql-9.1/bin/psql
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin

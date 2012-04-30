@@ -19,7 +19,7 @@ hi Delimter       guifg=#8F8F8F ctermfg=245  gui=none cterm=none
 hi DiffAdd                                   guibg=#13354A ctermbg=236  gui=none cterm=none
 hi DiffChange     guifg=#89807D ctermfg=244  guibg=#4C4745 ctermbg=238  gui=none cterm=none
 hi DiffText                                  guibg=#4C4745 ctermbg=238  gui=italic cterm=none
-hi Error          guifg=#FF005F ctermfg=197  guibg=#1E0010 ctermbg=233  gui=none cterm=none
+hi Error          guifg=#FF005F ctermfg=197  guibg=#080808 ctermbg=232  gui=none cterm=none
 hi Function       guifg=#AFD700 ctermfg=148  gui=none cterm=none
 hi Directory      guifg=#AFD700 ctermfg=148  gui=none cterm=none
 hi SignColumn     guifg=#AFD700 ctermfg=148  guibg=#232526 ctermbg=235  gui=none cterm=none
