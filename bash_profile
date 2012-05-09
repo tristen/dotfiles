@@ -138,7 +138,7 @@ EVENT_NOKQUEUE=1
 
 export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
 
-#Mapnik
+# Mapnik
 MAPNIK=/Library/Frameworks/Mapnik.framework
   export PATH=$MAPNIK/Programs:$PATH
   export NODE_PATH=$MAPNIK/Node:$NODE_PATH
@@ -147,6 +147,9 @@ MAPNIK=/Library/Frameworks/Mapnik.framework
 ## Postgres with PostGIS support
 #export PATH=/usr/local/pgsql/bin/:$PATH
 #export PATH=$HOME/local/node/bin:$PATH
+
+# Postgres.app
+#PATH='/Applications/Postgres.app/Contents/MacOS/bin:$PATH'
 
 # ~/.bin executables
 export PATH=~/bin:$PATH

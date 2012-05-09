@@ -1,4 +1,4 @@
-" == BASIC INTERFACE PREFERENCES ==========================
+"== BASIC INTERFACE PREFERENCES ==========================
 
 set nocompatible
 
@@ -30,15 +30,6 @@ set vb t_vb=
 " Don't swap in my working directory
 set directory^=$HOME/.vim/swap//
 
-" Stylez
-colorscheme fallsemo
-if has('gui_running')
-  colorscheme molokai
-  set guifont=Droid\ Sans\ Mono:h12
-  " Remove the toolbar in MacVim
-  set guioptions=egmrt
-endif
-
 " text selection to not include character under cursor
 set selection=exclusive
 behave mswin
@@ -59,8 +50,17 @@ let g:gist_detect_filetype = 1
 
 " Ctrlp
 let g:ctrlp_map = '<c-p>'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+
+set wildmode=list:longest
+"enable ctrl-n and ctrl-p to scroll thru matches
+set wildmenu
+"stuff to ignore when tab completing
+set wildignore=*.o,*.obj,*.zip,*~
+set wildignore+=*DS_Store*
+set wildignore+=vendor/cache/**
+set wildignore+=tmp/**
+set wildignore+=*.jpg,*.gif
 
 " Nerdtree
 noremap  <F2> :NERDTreeToggle<cr>
@@ -84,8 +84,12 @@ noremap <Right> <nop>
 " == MacVim vs Vim ========================================
 
 if has('gui_macvim') && has('gui_running')
+  colorscheme molokai
+  set guifont=Droid\ Sans\ Mono:h12
+  set guioptions=egmrt  " Remove the toolbar in MacVim
 else
-  set mouse=a " Mouse support
+  colorscheme fallsemo
+  set mouse=a   " Mouse support
   set t_Co=256
 endif
 

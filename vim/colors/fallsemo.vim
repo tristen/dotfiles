@@ -119,13 +119,19 @@ hi link cssUiProp               Define
 hi link cssGeneratedContentProp Define
 
 " Javascript
-hi link javaScriptBrowserObjects        Constant
-hi link javaScriptDOMObjects            Constant
-hi link javaScriptDOMMethods            Constant
-hi link javaScriptDOMProperties         Keyword
-hi link javaScriptAjaxObjects           Constant
-hi link javaScriptAjaxMethods           Constant
-hi link javaScriptAjaxProperties        Constant
-hi link javaScriptHtmlElemProperties    Constant
-hi link javaScriptEventListenerKeyword  Constant
-hi link javaScriptFutureKeys            Constant
+hi link javaScriptNumber         Boolean
+hi link javaScriptRegexpString   Boolean
+hi link javaScriptPrototype      Type         " prototype
+hi link javaScriptType           Type         " const undefined void yield 
+hi link javaScriptIdentifier     Identifier   " var this
+hi link javaScriptLabel          Label        " length
+hi link javaScriptGlobalObjects  Class
+hi link javaScriptFunction       Keyword
+hi link javaScriptSource         Keyword      " import export
+hi link javaScriptOperator       Keyword      " delete new in instanceof let typeof
+hi link javaScriptBoolean        Keyword      " true false
+hi link javaScriptNull           Keyword      " null
+hi link javaScriptConditional    Keyword      " if else
+hi link javaScriptRepeat         Keyword      " do while for
+hi link javaScriptBranch         Keyword      " break continue switch case default return
+hi link javaScriptStatement      Keyword      " try catch throw with finally
