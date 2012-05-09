@@ -9,41 +9,41 @@ if exists('syntax_on')
 endif
 let g:colors_name='fallsemo'
 
-hi Normal         guifg=#93a1a1 ctermfg=247  guibg=#121212 ctermbg=233  gui=none cterm=none
-hi Cursor         guifg=#121212 ctermfg=233  guibg=#F8F8F0 ctermbg=255  gui=none cterm=none
-hi Boolean        guifg=#87D7D7 ctermfg=159  gui=none cterm=none
+hi Normal         guifg=#93a1a1 ctermfg=247  guibg=#121212 ctermbg=233  gui=NONE cterm=NONE
+hi Cursor         guifg=#121212 ctermfg=233  guibg=#F8F8F0 ctermbg=255  gui=NONE cterm=NONE
+hi Boolean        guifg=#87D7D7 ctermfg=159  gui=NONE cterm=NONE
 hi Constant       guifg=#87D7D7 ctermfg=159  gui=bold cterm=bold
-hi Character      guifg=#D7D787 ctermfg=186  gui=none cterm=none
+hi Character      guifg=#D7D787 ctermfg=186  gui=NONE cterm=NONE
 hi Debug          guifg=#BCA3A3 ctermfg=248  gui=bold cterm=bold
-hi Delimter       guifg=#8F8F8F ctermfg=245  gui=none cterm=none
-hi DiffAdd                                   guibg=#13354A ctermbg=236  gui=none cterm=none
-hi DiffChange     guifg=#89807D ctermfg=244  guibg=#4C4745 ctermbg=238  gui=none cterm=none
-hi DiffText                                  guibg=#4C4745 ctermbg=238  gui=italic cterm=none
-hi Error          guifg=#FF005F ctermfg=197  guibg=#080808 ctermbg=232  gui=none cterm=none
-hi Function       guifg=#AFD700 ctermfg=148  gui=none cterm=none
-hi Directory      guifg=#AFD700 ctermfg=148  gui=none cterm=none
-hi SignColumn     guifg=#AFD700 ctermfg=148  guibg=#232526 ctermbg=235  gui=none cterm=none
+hi Delimter       guifg=#8F8F8F ctermfg=245  gui=NONE cterm=NONE
+hi DiffAdd                                   guibg=#13354A ctermbg=236  gui=NONE cterm=NONE
+hi DiffChange     guifg=#89807D ctermfg=244  guibg=#4C4745 ctermbg=238  gui=NONE cterm=NONE
+hi DiffText                                  guibg=#4C4745 ctermbg=238  gui=italic cterm=NONE
+hi Error          guifg=#FF005F ctermfg=197  guibg=#080808 ctermbg=232  gui=NONE cterm=NONE
+hi Function       guifg=#AFD700 ctermfg=148  gui=NONE cterm=NONE
+hi Directory      guifg=#AFD700 ctermfg=148  gui=NONE cterm=NONE
+hi SignColumn     guifg=#AFD700 ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
 hi Conditional    guifg=#FF005F ctermfg=197
 hi ErrorMsg       guifg=#FF5F5F ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
 hi Statement      guifg=#D7575F ctermfg=203
-hi Tag            guifg=#D7575F ctermfg=203  gui=italic cterm=none
+hi Tag            guifg=#D7575F ctermfg=203  gui=italic cterm=NONE
 hi Comment        guifg=#465457 ctermfg=240
 hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
-hi Identifier     guifg=#FFD700 ctermfg=220  gui=none cterm=none
-hi StorageClass   guifg=#FFD700 ctermfg=220  gui=italic cterm=none
-hi Ignore         guifg=#121212 ctermfg=233  gui=none cterm=none
-hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=none
-hi Define         guifg=#005FAF ctermfg=33   gui=none cterm=none
-hi Type           guifg=#005FAF ctermfg=33   gui=none cterm=none
-hi WildMenu       guifg=#005FAF ctermfg=33   guibg=#000000 ctermbg=16   gui=none cterm=none
-hi Special        guifg=#005FAF ctermfg=33   gui=italic cterm=none
+hi Identifier     guifg=#FFD700 ctermfg=220  gui=NONE cterm=NONE
+hi StorageClass   guifg=#FFD700 ctermfg=220  gui=italic cterm=NONE
+hi Ignore         guifg=#121212 ctermfg=233  gui=NONE cterm=NONE
+hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=NONE
+hi Define         guifg=#005FAF ctermfg=33   gui=NONE cterm=NONE
+hi Type           guifg=#005FAF ctermfg=33   gui=NONE cterm=NONE
+hi WildMenu       guifg=#005FAF ctermfg=33   guibg=#000000 ctermbg=16   gui=NONE cterm=NONE
+hi Special        guifg=#005FAF ctermfg=33   gui=italic cterm=NONE
 hi MatchParen     guifg=#000000 ctermfg=16   guibg=#FD971F ctermbg=208  gui=bold cterm=bold
-hi ModeMsg        guifg=#E6DB74 ctermfg=186  gui=none cterm=none
-hi PmenuSel                                  guibg=#808080 ctermbg=244  gui=none cterm=none
-hi Search         guifg=#FFFFFF ctermfg=231  guibg=#455354 ctermbg=239  gui=none cterm=none
+hi ModeMsg        guifg=#E6DB74 ctermfg=186  gui=NONE cterm=NONE
+hi PmenuSel                                  guibg=#808080 ctermbg=244  gui=NONE cterm=NONE
+hi Search         guifg=#FFFFFF ctermfg=231  guibg=#455354 ctermbg=239  gui=NONE cterm=NONE
 hi Underlined     guifg=#808080 ctermfg=244  gui=underline cterm=underline
-hi Title          guifg=#EEEEEE ctermfg=255  gui=none cterm=none
-hi Todo           guifg=#FFFFFF ctermfg=15   guibg=none ctermbg=none    gui=underline cterm=underline
+hi Title          guifg=#EEEEEE ctermfg=255  gui=NONE cterm=NONE
+hi Todo           guifg=#FFFFFF ctermfg=15   guibg=NONE ctermbg=NONE    gui=underline cterm=underline
 hi WarningMsg     guifg=#FFFFFF ctermfg=231  guibg=#262626 ctermbg=235  gui=bold cterm=bold
 
 hi link Number        Boolean
@@ -75,13 +75,13 @@ hi link VisualNOS     Visual
 " == Editor Aesthetics ====================================
 
 hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
-hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=none cterm=none
-hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=none cterm=none
-hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234  gui=none cterm=none
-hi LineNr         guifg=#303030 ctermfg=236  gui=none cterm=none
+hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=NONE cterm=NONE
+hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=NONE cterm=NONE
+hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234  gui=NONE cterm=NONE
+hi LineNr         guifg=#303030 ctermfg=236  gui=NONE cterm=NONE
 hi Folded         guifg=#FFFFFF ctermfg=255  guibg=#435435 ctermbg=25
 hi FoldColumn     guifg=#FFFFFF ctermfg=255  guibg=#435435 ctermbg=25
-hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=none
+hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=NONE
 
 " == Language Specific Highlighting =======================
 
