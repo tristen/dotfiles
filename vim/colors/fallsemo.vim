@@ -11,8 +11,8 @@ let g:colors_name='fallsemo'
 
 hi Normal         guifg=#93a1a1 ctermfg=247  guibg=#121212 ctermbg=233  gui=NONE cterm=NONE
 hi Cursor         guifg=#121212 ctermfg=233  guibg=#F8F8F0 ctermbg=255  gui=NONE cterm=NONE
-hi Boolean        guifg=#87D7D7 ctermfg=159  gui=NONE cterm=NONE
-hi Constant       guifg=#87D7D7 ctermfg=159  gui=bold cterm=bold
+hi Boolean        guifg=#4bc7f4 ctermfg=159  gui=NONE cterm=NONE
+hi Constant       guifg=#4bc7f4 ctermfg=159  gui=bold cterm=bold
 hi Character      guifg=#D7D787 ctermfg=186  gui=NONE cterm=NONE
 hi Debug          guifg=#BCA3A3 ctermfg=248  gui=bold cterm=bold
 hi Delimter       guifg=#8F8F8F ctermfg=245  gui=NONE cterm=NONE
@@ -20,23 +20,25 @@ hi DiffAdd                                   guibg=#13354A ctermbg=236  gui=NONE
 hi DiffChange     guifg=#89807D ctermfg=244  guibg=#4C4745 ctermbg=238  gui=NONE cterm=NONE
 hi DiffText                                  guibg=#4C4745 ctermbg=238  gui=italic cterm=NONE
 hi Error          guifg=#FF005F ctermfg=197  guibg=#080808 ctermbg=232  gui=NONE cterm=NONE
-hi Function       guifg=#AFD700 ctermfg=148  gui=NONE cterm=NONE
-hi Directory      guifg=#AFD700 ctermfg=148  gui=NONE cterm=NONE
-hi SignColumn     guifg=#AFD700 ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
+hi Function       guifg=#99CC33 ctermfg=148  gui=NONE cterm=NONE
+hi Directory      guifg=#99CC33 ctermfg=148  gui=NONE cterm=NONE
+hi SignColumn     guifg=#99CC33 ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
 hi Conditional    guifg=#FF005F ctermfg=197
 hi ErrorMsg       guifg=#FF5F5F ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
-hi Statement      guifg=#D7575F ctermfg=203
-hi Tag            guifg=#D7575F ctermfg=203  gui=italic cterm=NONE
+hi Statement      guifg=#EE6E47 ctermfg=203
+hi Tag            guifg=#EE6E47 ctermfg=203  gui=italic cterm=NONE
 hi Comment        guifg=#465457 ctermfg=240
 hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
 hi Identifier     guifg=#FFD700 ctermfg=220  gui=NONE cterm=NONE
 hi StorageClass   guifg=#FFD700 ctermfg=220  gui=italic cterm=NONE
 hi Ignore         guifg=#121212 ctermfg=233  gui=NONE cterm=NONE
 hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=NONE
-hi Define         guifg=#005FAF ctermfg=33   gui=NONE cterm=NONE
-hi Type           guifg=#005FAF ctermfg=33   gui=NONE cterm=NONE
-hi WildMenu       guifg=#005FAF ctermfg=33   guibg=#000000 ctermbg=16   gui=NONE cterm=NONE
-hi Special        guifg=#005FAF ctermfg=33   gui=italic cterm=NONE
+
+hi Define         guifg=#338EB3 ctermfg=33   gui=NONE cterm=NONE
+hi Type           guifg=#338EB3 ctermfg=33   gui=NONE cterm=NONE
+hi WildMenu       guifg=#338EB3 ctermfg=33   guibg=#000000 ctermbg=16   gui=NONE cterm=NONE
+hi Special        guifg=#338EB3 ctermfg=33   gui=italic cterm=NONE
+
 hi MatchParen     guifg=#000000 ctermfg=16   guibg=#FD971F ctermbg=208  gui=bold cterm=bold
 hi ModeMsg        guifg=#E6DB74 ctermfg=186  gui=NONE cterm=NONE
 hi PmenuSel                                  guibg=#808080 ctermbg=244  gui=NONE cterm=NONE
@@ -79,6 +81,7 @@ hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=NONE
 hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=NONE cterm=NONE
 hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234  gui=NONE cterm=NONE
 hi LineNr         guifg=#303030 ctermfg=236  gui=NONE cterm=NONE
+hi NonText        guifg=#303030 ctermfg=236  " The tilde when vim starts 
 hi Folded         guifg=#FFFFFF ctermfg=255  guibg=#435435 ctermbg=25
 hi FoldColumn     guifg=#FFFFFF ctermfg=255  guibg=#435435 ctermbg=25
 hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=NONE
@@ -87,6 +90,7 @@ hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=NONE
 
 " html
 hi link htmlTag                 Tag
+hi link htmlHead                Tag
 hi link htmlSpecialTagName      Tag
 hi link htmlEndTag              Tag
 hi link htmlArg                 Function
@@ -101,6 +105,7 @@ hi htmlUnderlineItalic          gui=underline,italic        cterm=underline,ital
 " css
 hi link cssImportant            Error
 hi link cssPseudoClass          Tag
+hi link cssPseudoClassId        Tag
 hi link cssStringQ              Boolean
 hi link cssAttr                 Boolean
 hi link cssFontAttr             Boolean

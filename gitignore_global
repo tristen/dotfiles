@@ -11,3 +11,7 @@ Thumbs.db
 .*.sw[a-z]
 *.un~
 Session.vim
+
+# Jekyll #
+# ######################
+_site/*
