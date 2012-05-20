@@ -118,6 +118,9 @@ function! StripWhitespace ()
 endfunction
 noremap ,s :call StripWhitespace()<CR>
 
+" Swap quotations types a file
+noremap ,' :%! tr \"\' \'\"<CR>
+
 " == TABS & FORMATTING ====================================
 
 set shiftwidth=2
