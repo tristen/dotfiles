@@ -20,11 +20,13 @@ hi DiffAdd                                   guibg=#13354A ctermbg=236  gui=NONE
 hi DiffChange     guifg=#89807D ctermfg=244  guibg=#4C4745 ctermbg=238  gui=NONE cterm=NONE
 hi DiffText                                  guibg=#4C4745 ctermbg=238  gui=italic cterm=NONE
 hi Error          guifg=#FF005F ctermfg=197  guibg=#080808 ctermbg=232  gui=NONE cterm=NONE
-hi Function       guifg=#99CC33 ctermfg=148  gui=NONE cterm=NONE
+hi Conditional    guifg=#FF005F ctermfg=197
+
+hi Function       guifg=#99CC33 ctermfg=148  gui=bold cterm=bold
 hi Directory      guifg=#99CC33 ctermfg=148  gui=NONE cterm=NONE
 hi SignColumn     guifg=#99CC33 ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
-hi Conditional    guifg=#FF005F ctermfg=197
-hi ErrorMsg       guifg=#FF5F5F ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
+
+hi ErrorMsg       guifg=#EE6E47 ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
 hi Statement      guifg=#EE6E47 ctermfg=203
 hi Tag            guifg=#EE6E47 ctermfg=203  gui=italic cterm=NONE
 hi Comment        guifg=#465457 ctermfg=240
@@ -47,6 +49,28 @@ hi Underlined     guifg=#808080 ctermfg=244  gui=underline cterm=underline
 hi Title          guifg=#EEEEEE ctermfg=255  gui=NONE cterm=NONE
 hi Todo           guifg=#FFFFFF ctermfg=15   guibg=NONE ctermbg=NONE    gui=underline cterm=underline
 hi WarningMsg     guifg=#FFFFFF ctermfg=231  guibg=#262626 ctermbg=235  gui=bold cterm=bold
+
+" == Editor Aesthetics ====================================
+
+hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
+hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234 gui=NONE cterm=NONE
+hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234 gui=NONE cterm=NONE
+hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234 gui=NONE cterm=NONE
+hi LineNr         guifg=#303030 ctermfg=236  gui=NONE cterm=NONE
+hi NonText        guifg=#303030 ctermfg=236  " The tilde when vim starts 
+hi Folded         guifg=#FFFFFF ctermfg=255  guibg=#005FAF ctermbg=25 " Code folding
+hi FoldColumn     guifg=#FFFFFF ctermfg=255  guibg=#005FAF ctermbg=25
+hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=NONE
+hi MoreMsg        guifg=#FF9E80 ctermfg=173
+hi Question       guifg=#8ae234 gui=none
+
+" Pmenu
+hi Pmenu          guifg=#93a1a1 ctermfg=247  guibg=#303030 ctermbg=236 gui=NONE cterm=NONE
+hi PmenuSel       guifg=#121212 ctermfg=233  guibg=#FFFFFF ctermbg=255 gui=NONE cterm=NONE
+hi PmenuSbar                                 guibg=#455354 ctermbg=239
+hi PmenuThumb     guifg=#93a1a1 ctermfg=247
+
+" == Sharing! =============================================
 
 hi link Number        Boolean
 hi link Float         Boolean
@@ -72,19 +96,6 @@ hi link SpecialKey    Special
 hi link MoreMsg       ModeMsg
 hi link PmenuSbar     PmenuSel
 hi link VisualNOS     Visual
-
-
-" == Editor Aesthetics ====================================
-
-hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
-hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234  gui=NONE cterm=NONE
-hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234  gui=NONE cterm=NONE
-hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234  gui=NONE cterm=NONE
-hi LineNr         guifg=#303030 ctermfg=236  gui=NONE cterm=NONE
-hi NonText        guifg=#303030 ctermfg=236  " The tilde when vim starts 
-hi Folded         guifg=#FFFFFF ctermfg=255  guibg=#435435 ctermbg=25
-hi FoldColumn     guifg=#FFFFFF ctermfg=255  guibg=#435435 ctermbg=25
-hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=NONE
 
 " == Language Specific Highlighting =======================
 

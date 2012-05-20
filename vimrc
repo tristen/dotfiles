@@ -37,6 +37,9 @@ behave mswin
 " change indent settings according to filetype
 filetype plugin indent on
 
+" code folding? meh.
+set nofoldenable
+
 " wrap like I'm used to
 set wrap
 set formatoptions=1
