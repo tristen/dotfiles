@@ -55,6 +55,3 @@
 [submodule "vim/bundle/vim-taglist-plus"]
 	path = vim/bundle/vim-taglist-plus
 	url = https://github.com/int3/vim-taglist-plus.git
-[submodule "vim/bundle/vim-javascript"]
-	path = vim/bundle/vim-javascript
-	url = https://github.com/tmcw/vim-javascript.git
