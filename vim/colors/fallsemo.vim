@@ -19,16 +19,20 @@ hi Delimter       guifg=#8F8F8F ctermfg=245  gui=NONE cterm=NONE
 hi DiffAdd                                   guibg=#13354A ctermbg=236  gui=NONE cterm=NONE
 hi DiffChange     guifg=#89807D ctermfg=244  guibg=#4C4745 ctermbg=238  gui=NONE cterm=NONE
 hi DiffText                                  guibg=#4C4745 ctermbg=238  gui=italic cterm=NONE
-hi Error          guifg=#FF005F ctermfg=197  guibg=#080808 ctermbg=232  gui=NONE cterm=NONE
-hi Conditional    guifg=#FF005F ctermfg=197
+
+" Lighter brick
+hi Error          guifg=#FF9E80 ctermfg=210  guibg=#080808 ctermbg=232  gui=NONE cterm=NONE
+hi Conditional    guifg=#FF9E80 ctermfg=210
+
+" Darker brick
+hi ErrorMsg       guifg=#EE6E47 ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
+hi Statement      guifg=#EE6E47 ctermfg=203
+hi Tag            guifg=#EE6E47 ctermfg=203  gui=italic cterm=NONE
 
 hi Function       guifg=#99CC33 ctermfg=148  gui=bold cterm=bold
 hi Directory      guifg=#99CC33 ctermfg=148  gui=NONE cterm=NONE
 hi SignColumn     guifg=#99CC33 ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
 
-hi ErrorMsg       guifg=#EE6E47 ctermfg=203  guibg=#232526 ctermbg=235  gui=bold cterm=bold
-hi Statement      guifg=#EE6E47 ctermfg=203
-hi Tag            guifg=#EE6E47 ctermfg=203  gui=italic cterm=NONE
 hi Comment        guifg=#465457 ctermfg=240
 hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
 hi Identifier     guifg=#FFD700 ctermfg=220  gui=NONE cterm=NONE
