@@ -9,11 +9,14 @@ if exists('syntax_on')
 endif
 let g:colors_name='fallsemo'
 
-hi Normal         guifg=#93a1a1 ctermfg=247  guibg=#121212 ctermbg=233  gui=NONE cterm=NONE
+hi Normal         guifg=#93A1A1 ctermfg=247  guibg=#121212 ctermbg=233  gui=NONE cterm=NONE
 hi Cursor         guifg=#121212 ctermfg=233  guibg=#F8F8F0 ctermbg=255  gui=NONE cterm=NONE
-hi Boolean        guifg=#4bc7f4 ctermfg=159  gui=NONE cterm=NONE
-hi Constant       guifg=#4bc7f4 ctermfg=159  gui=bold cterm=bold
-hi Character      guifg=#D7D787 ctermfg=186  gui=NONE cterm=NONE
+hi Boolean        guifg=#4BC7f4 ctermfg=159  gui=NONE cterm=NONE
+hi Constant       guifg=#4BC7f4 ctermfg=159  gui=bold cterm=bold
+
+" Light yellow
+hi Character      guifg=#C1DA86 ctermfg=229  gui=NONE cterm=NONE
+
 hi Debug          guifg=#BCA3A3 ctermfg=248  gui=bold cterm=bold
 hi Delimter       guifg=#8F8F8F ctermfg=245  gui=NONE cterm=NONE
 hi DiffAdd                                   guibg=#13354A ctermbg=236  gui=NONE cterm=NONE
@@ -29,9 +32,9 @@ hi ErrorMsg       guifg=#EE6E47 ctermfg=203  guibg=#232526 ctermbg=235  gui=bold
 hi Statement      guifg=#EE6E47 ctermfg=203
 hi Tag            guifg=#EE6E47 ctermfg=203  gui=italic cterm=NONE
 
-hi Function       guifg=#99CC33 ctermfg=148  gui=bold cterm=bold
-hi Directory      guifg=#99CC33 ctermfg=148  gui=NONE cterm=NONE
-hi SignColumn     guifg=#99CC33 ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
+hi Function       guifg=#93C05E ctermfg=148  gui=bold cterm=bold
+hi Directory      guifg=#93C05E ctermfg=148  gui=NONE cterm=NONE
+hi SignColumn     guifg=#93C05E ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
 
 hi Comment        guifg=#465457 ctermfg=240
 hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
@@ -40,6 +43,7 @@ hi StorageClass   guifg=#FFD700 ctermfg=220  gui=italic cterm=NONE
 hi Ignore         guifg=#121212 ctermfg=233  gui=NONE cterm=NONE
 hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=NONE
 
+" Blue
 hi Define         guifg=#338EB3 ctermfg=33   gui=NONE cterm=NONE
 hi Type           guifg=#338EB3 ctermfg=33   gui=NONE cterm=NONE
 hi WildMenu       guifg=#338EB3 ctermfg=33   guibg=#000000 ctermbg=16   gui=NONE cterm=NONE
@@ -61,7 +65,7 @@ hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234 gui=NONE 
 hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234 gui=NONE cterm=NONE
 hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234 gui=NONE cterm=NONE
 hi LineNr         guifg=#303030 ctermfg=236  gui=NONE cterm=NONE
-hi NonText        guifg=#303030 ctermfg=236  " The tilde when vim starts 
+hi NonText        guifg=#303030 ctermfg=236  " The tilde when vim starts
 hi Folded         guifg=#FFFFFF ctermfg=255  guibg=#005FAF ctermbg=25 " Code folding
 hi FoldColumn     guifg=#FFFFFF ctermfg=255  guibg=#005FAF ctermbg=25
 hi CursorLine     guibg=#1C1C1C ctermbg=234  cterm=NONE
@@ -101,6 +105,7 @@ hi link MoreMsg       ModeMsg
 hi link PmenuSbar     PmenuSel
 hi link VisualNOS     Visual
 
+
 " == Language Specific Highlighting =======================
 
 " html
@@ -139,19 +144,19 @@ hi link cssUiProp               Define
 hi link cssGeneratedContentProp Define
 
 " Javascript
-hi link javaScriptNumber         Boolean
-hi link javaScriptRegexpString   Boolean
-hi link javaScriptPrototype      Type         " prototype
-hi link javaScriptType           Type         " const undefined void yield 
-hi link javaScriptIdentifier     Identifier   " var this
-hi link javaScriptLabel          Label        " length
-hi link javaScriptGlobalObjects  Class
-hi link javaScriptFunction       Keyword
-hi link javaScriptSource         Keyword      " import export
-hi link javaScriptOperator       Keyword      " delete new in instanceof let typeof
-hi link javaScriptBoolean        Keyword      " true false
-hi link javaScriptNull           Keyword      " null
-hi link javaScriptConditional    Keyword      " if else
-hi link javaScriptRepeat         Keyword      " do while for
+hi link javaScriptNumber        Boolean
+hi link javaScriptRegexpString  Boolean
+hi link javaScriptPrototype     Type        " prototype
+hi link javaScriptType          Type        " const undefined void yield
+hi link javaScriptIdentifier    Identifier  " var this
+hi link javaScriptLabel         Label       " length
+hi link javaScriptGlobalObjects Class
+hi link javaScriptFunction      Keyword
+hi link javaScriptSource        Keyword     " import export
+hi link javaScriptOperator      Keyword     " delete new in instanceof let typeof
+hi link javaScriptBoolean       Keyword     " true false
+hi link javaScriptNull          Keyword     " null
+hi link javaScriptConditional   Keyword     " if else
+hi link javaScriptRepeat        Keyword     " do while for
 hi link javaScriptBranch         Keyword      " break continue switch case default return
 hi link javaScriptStatement      Keyword      " try catch throw with finally
