@@ -78,6 +78,9 @@ hi PmenuSel       guifg=#121212 ctermfg=233  guibg=#FFFFFF ctermbg=255 gui=NONE 
 hi PmenuSbar                                 guibg=#455354 ctermbg=239
 hi PmenuThumb     guifg=#93a1a1 ctermfg=247
 
+" NerdTree
+hi link NerdTreeDirSlash  function
+
 " == Sharing! =============================================
 
 hi link Number        Boolean
@@ -151,12 +154,12 @@ hi link javaScriptType          Type        " const undefined void yield
 hi link javaScriptIdentifier    Identifier  " var this
 hi link javaScriptLabel         Label       " length
 hi link javaScriptGlobalObjects Class
-hi link javaScriptFunction      Keyword
-hi link javaScriptSource        Keyword     " import export
-hi link javaScriptOperator      Keyword     " delete new in instanceof let typeof
-hi link javaScriptBoolean       Keyword     " true false
-hi link javaScriptNull          Keyword     " null
-hi link javaScriptConditional   Keyword     " if else
-hi link javaScriptRepeat        Keyword     " do while for
-hi link javaScriptBranch         Keyword      " break continue switch case default return
-hi link javaScriptStatement      Keyword      " try catch throw with finally
+hi link javaScriptFunction      Statement
+hi link javaScriptSource        Statement   " import export
+hi link javaScriptOperator      Statement   " delete new in instanceof let typeof
+hi link javaScriptBoolean       Statement   " true false
+hi link javaScriptNull          Statement   " null
+hi link javaScriptConditional   Statement   " if else
+hi link javaScriptRepeat        Statement   " do while for
+hi link javaScriptBranch        Statement   " break continue switch case default return
+hi link javaScriptStatement     Statement   " try catch throw with finally
