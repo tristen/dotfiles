@@ -61,8 +61,8 @@ hi WarningMsg     guifg=#FFFFFF ctermfg=231  guibg=#262626 ctermbg=235  gui=bold
 " == Editor Aesthetics ====================================
 
 hi VertSplit      guifg=#1C1C1C ctermfg=234  guibg=#1C1C1C ctermbg=234
-hi StatusLine     guifg=#808080 ctermfg=244  guibg=#808080 ctermbg=234 gui=NONE cterm=NONE
-hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#080808 ctermbg=234 gui=NONE cterm=NONE
+hi StatusLine     guifg=#808080 ctermfg=244  guibg=#1C1C1C ctermbg=234 gui=NONE cterm=NONE
+hi StatusLineNC   guifg=#455354 ctermfg=239  guibg=#1C1C1C ctermbg=234 gui=NONE cterm=NONE
 hi Visual         guifg=#465457 ctermfg=240  guibg=#1C1C1C ctermbg=234 gui=NONE cterm=NONE
 hi LineNr         guifg=#303030 ctermfg=236  gui=NONE cterm=NONE
 hi NonText        guifg=#303030 ctermfg=236  " The tilde when vim starts
