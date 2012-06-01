@@ -112,7 +112,9 @@ hi link VisualNOS     Visual
 " == Language Specific Highlighting =======================
 
 " html
+hi      htmlLink                guifg=#93A1A1 ctermfg=247 gui=underline cterm=underline
 hi link htmlTag                 Tag
+hi link htmlLink                Tag
 hi link htmlHead                Tag
 hi link htmlSpecialTagName      Tag
 hi link htmlEndTag              Tag
