@@ -11,6 +11,8 @@ let g:colors_name='fallsemo'
 
 hi Normal         guifg=#93A1A1 ctermfg=247  guibg=#121212 ctermbg=233  gui=NONE cterm=NONE
 hi Cursor         guifg=#121212 ctermfg=233  guibg=#F8F8F0 ctermbg=255  gui=NONE cterm=NONE
+
+" Light Blue
 hi Boolean        guifg=#4BC7f4 ctermfg=159  gui=NONE cterm=NONE
 hi Constant       guifg=#4BC7f4 ctermfg=159  gui=bold cterm=bold
 
@@ -38,8 +40,11 @@ hi SignColumn     guifg=#93C05E ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE
 
 hi Comment        guifg=#465457 ctermfg=240
 hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
+
+" Electric Yellow (change)
 hi Identifier     guifg=#FFD700 ctermfg=220  gui=NONE cterm=NONE
 hi StorageClass   guifg=#FFD700 ctermfg=220  gui=italic cterm=NONE
+
 hi Ignore         guifg=#121212 ctermfg=233  gui=NONE cterm=NONE
 hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=NONE
 
@@ -85,6 +90,8 @@ hi link NerdTreeDirSlash  function
 
 hi link Number        Boolean
 hi link Float         Boolean
+hi link Set           Boolean
+hi link Option        Boolean
 hi link String        Character
 hi link Label         Character
 hi link Keyword       Conditional
@@ -107,14 +114,14 @@ hi link SpecialKey    Special
 hi link MoreMsg       ModeMsg
 hi link PmenuSbar     PmenuSel
 hi link VisualNOS     Visual
-
+hi link SharpBang     Normal
+hi link Include       Tag
 
 " == Language Specific Highlighting =======================
 
 " html
 hi      htmlLink                guifg=#93A1A1 ctermfg=247 gui=underline cterm=underline
 hi link htmlTag                 Tag
-hi link htmlLink                Tag
 hi link htmlHead                Tag
 hi link htmlSpecialTagName      Tag
 hi link htmlEndTag              Tag
@@ -148,6 +155,10 @@ hi link cssTableProp            Define
 hi link cssUiProp               Define
 hi link cssGeneratedContentProp Define
 
+" Ruby
+hi link rubySharpBang           Normal
+hi link rubyControl             Comment
+
 " Javascript
 hi link javaScriptNumber        Boolean
 hi link javaScriptRegexpString  Boolean
@@ -165,3 +176,4 @@ hi link javaScriptConditional   Statement   " if else
 hi link javaScriptRepeat        Statement   " do while for
 hi link javaScriptBranch        Statement   " break continue switch case default return
 hi link javaScriptStatement     Statement   " try catch throw with finally
+hi link javascriptEnvComment    Comment     " executable
