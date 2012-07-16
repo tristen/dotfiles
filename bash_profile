@@ -1,5 +1,4 @@
-# Customize Command Prompt
-#
+# Simplify Command Prompt
 PS1='$ '
 
 export EDITOR='vim'
@@ -16,22 +15,19 @@ bind -f ~/.bash_keybindings
 # GIT Autocompletion
 source ~/.git-completion.sh
 
-# ---- Colors ---------------------------------------------------------
-
+# Colors
 export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1;
 
-# ---- History --------------------------------------------------------
-
+# Bash History
 export HISTCONTROL=erasedups
 export HISTFILE=$HOME/.bash_history
 export HISTSIZE=50000
 export HISTIGNORE='&:ls:cd ~:cd ..:[bf]g:exit:h:history'
 
-# == ALIASES ==========================================================
+# == ALIASES =========================================================
 
-# ---- Default Options --------------------------------------
-
+# Default Options to commands
 alias df='df -h'
 alias grep='grep --color=auto'
 alias mkdir='mkdir -p'
@@ -40,17 +36,17 @@ alias rm='rm -v'
 alias vlc='vlc --extraintf http'
 alias xclip='xclip -selection c'
 alias c='clear'
+alias mytar='tar -cvf'
+alias myuntar='tar -xvp'
+alias jekyll='--server --auto'
 
-# ---- Shortcuts  -----------------------------------------------------
+# Paths I frequent
+alias ds='cd ~/devseed'
+alias d='cd ~/Desktop'
+alias gh='cd ~/github'
 
 # Process
 alias active='ps auxw | grep post'
-
-# TaskWarrior
-alias t='task'
-alias tl='task list'
-alias ta='task add'
-alias td='task done'
 
 # ls
 alias ls='ls -F --color=auto'            # a couple good defaults
@@ -78,16 +74,16 @@ alias gs='git status -sb'
 alias gp='git pull'
 alias oc='octogit'
 
-#Linting
-alias lint='gjslint'
+# Linting
+alias lint='jshint'
 # IRC
 alias irc='irssi'
-#Edit this file
+# Edit this file
 alias editalias='mvim ~/.bashrc'
-#Edit hosts
+# Edit hosts
 alias edithosts='mvim ~/.ssh/config'
 
-# == FUNCTIONS ========================================================
+# == FUNCTIONS =======================================================
 
 function pngencode() {
   # pngencode = BASE-64 encode an image
@@ -116,23 +112,9 @@ function xt() {
   fi
 }
 
-# PATH
+# == PATHS ===========================================================
+
 export PATH="/usr/local/bin:/usr/bin:$PATH"
-
-# General Commands
-alias ls='ls -aFG'
-alias l='ls -lsh'
-alias ll='ls -alsh'
-alias md='mkdir'
-alias ..='cd ..'
-
-alias mytar='tar -cvf'
-alias myuntar='tar -xvp'
-
-# Paths
-alias ds='cd ~/devseed'
-alias d='cd ~/Desktop'
-alias gh='cd ~/github'
 
 EVENT_NOKQUEUE=1
 
@@ -143,13 +125,6 @@ MAPNIK=/Library/Frameworks/Mapnik.framework
   export PATH=$MAPNIK/Programs:$PATH
   export NODE_PATH=$MAPNIK/Node:$NODE_PATH
   export PYTHONPATH=$MAPNIK/Python:$PYTHONPATH
-
-## Postgres with PostGIS support
-#export PATH=/usr/local/pgsql/bin/:$PATH
-#export PATH=$HOME/local/node/bin:$PATH
-
-# Postgres.app
-#PATH='/Applications/Postgres.app/Contents/MacOS/bin:$PATH'
 
 # ~/.bin executables
 export PATH=~/bin:$PATH
