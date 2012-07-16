@@ -15,9 +15,14 @@ hi Cursor         guifg=#121212 ctermfg=233  guibg=#F8F8F0 ctermbg=255  gui=NONE
 " Light Blue
 hi Boolean        guifg=#4BC7f4 ctermfg=159  gui=NONE cterm=NONE
 hi Constant       guifg=#4BC7f4 ctermfg=159  gui=bold cterm=bold
+hi PreProc        guifg=#4BC7f4 ctermfg=159  gui=bold cterm=bold
 
 " Light yellow
 hi Character      guifg=#C1DA86 ctermfg=229  gui=NONE cterm=NONE
+
+" Darker Yellow
+hi Identifier     guifg=#9DA81D ctermfg=142  gui=NONE cterm=NONE
+hi StorageClass   guifg=#9DA81D ctermfg=142  gui=italic cterm=NONE
 
 hi Debug          guifg=#BCA3A3 ctermfg=248  gui=bold cterm=bold
 hi Delimter       guifg=#8F8F8F ctermfg=245  gui=NONE cterm=NONE
@@ -34,16 +39,14 @@ hi ErrorMsg       guifg=#EE6E47 ctermfg=203  guibg=#232526 ctermbg=235  gui=bold
 hi Statement      guifg=#EE6E47 ctermfg=203
 hi Tag            guifg=#EE6E47 ctermfg=203  gui=italic cterm=NONE
 
+" Turtle Green
 hi Function       guifg=#93C05E ctermfg=148  gui=bold cterm=bold
 hi Directory      guifg=#93C05E ctermfg=148  gui=NONE cterm=NONE
 hi SignColumn     guifg=#93C05E ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
 
+" Greyblue
 hi Comment        guifg=#465457 ctermfg=240
 hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
-
-" Electric Yellow (change)
-hi Identifier     guifg=#FFD700 ctermfg=220  gui=NONE cterm=NONE
-hi StorageClass   guifg=#FFD700 ctermfg=220  gui=italic cterm=NONE
 
 hi Ignore         guifg=#121212 ctermfg=233  gui=NONE cterm=NONE
 hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=NONE
@@ -101,7 +104,6 @@ hi link CursorColumn  CursorLine
 hi link Exception     Directory
 hi link PreCondit     Directory
 hi link DiffDelete    Error
-hi link PreProc       Function
 hi link SpecialChar   Statement
 hi link VertSplit     LineNr
 hi link Folded        FoldColumn

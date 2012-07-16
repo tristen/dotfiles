@@ -1,47 +1,49 @@
 # css3
-snippet round
-	-moz-border-radius: ${1:0};
-	border-radius: $1;
-snippet roundtop
-	-moz-border-radius-topright: ${1:10px};
-	-moz-border-radius-topleft: $1;
-	border-radius-topleft: $1;
-	border-radius-topright: $1;
-snippet roundbottom
-	-moz-border-radius-bottomright: ${1:10px};
-	-moz-border-radius-bottomleft: $1;
-	border-radius-bottomleft: $1;
-	border-radius-bottomright: $1;
-snippet roundeach
-	-moz-border-radius: ${1:0} ${2:0} ${3:0} ${4:0};
-	border-radius: $1 $2 $3 $4;
+snippet radius
+	-webkit-border-radius: ${1:0};
+			border-radius: $1;
+snippet radiustop
+	-webkit-border-radius-topright: ${1:10px};
+	-webkit-border-radius-topleft: $1;
+			border-radius-topleft: $1;
+			border-radius-topright: $1;
+snippet radiusbottom
+	-webkit-border-radius-bottomright: ${1:10px};
+	-webkit-border-radius-bottomleft: $1;
+			border-radius-bottomleft: $1;
+			border-radius-bottomright: $1;
+snippet radiuseach
+	-webkit-border-radius: ${1:0} ${2:0} ${3:0} ${4:0};
+			border-radius: $1 $2 $3 $4;
+snippet paddingbox
+	-webkit-background-clip: padding-box;
+	   -moz-background-clip: padding;
+			background-clip: padding-box;
 snippet boxshadow
-	-moz-box-shadow: ${1:0} ${2:0} ${3:0} ${4:rgba(0,0,0,0.25)};
-	box-shadow: $1 $2 $3 $4;
+	-webkit-box-shadow: ${1:0} ${2:0} ${3:0} ${4:rgba(0,0,0,0.25)};
+			box-shadow: $1 $2 $3 $4;
 snippet textshadow
 	text-shadow: ${1:5px} ${2:5px} ${3:5px} ${4:rgba(0,0,0,0.25)};
 snippet rotate
-	-moz-transform: rotate(${1:7.5}deg);
-	-o-transform: rotate($1deg);
-	-webkit-transform: rotate($1deg);
-	-ms-transform: rotate($1deg);
-	transform: rotate($1deg);
-	filter: progid:DXImageTransform.Microsoft.Matrix(M11=${2:0.9914448613738104},M12=-${3:0.13052619222005157},${4:M21=0.13052619222005157},${5:M22=0.9914448613738104},sizingMethod='auto expand');zoom: 1;
+	-webkit-transform: rotate(${1:7.5}deg);
+	   -moz-transform: rotate($1);
+		-ms-transform: rotate($1);
+		 -o-transform: rotate($1);
+			transform: rotate($1);
+				 zoom: 1;
 snippet wordwrap
-	white-space: pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap;
 	word-wrap: break-word;
 snippet transition
-	-moz-transition: ${1:all} ${2:0.3s} ${3:linear};
-	-o-transition: $1 $2 $3;
-	-webkit-transition: $1 $2 $3;
-	transition: $1 $2 $3;
-snippet fontfaceo
+	-webkit-transition: ${1:all} ${2:0.3s} ${3:linear};
+	   -moz-transition: $1 $2 $3;
+	     -o-transition: $1 $2 $3;
+			transition: $1 $2 $3;
+snippet fontface
 	@font-face {
 	  font-family: '${1:helvetica,arial,sans-serif;}';
 	  src: url('${2:fontname}.eot?') format('eot'),
 		   url('$2.woff') format('woff'),
 		   url('$2.ttf') format('truetype');
 	}
+snippet base64
+	background: ${1:transparent} url(data:image/png;base64,${2:BLOB}) ${3:no-repeat} ${4:0} ${5:0};
