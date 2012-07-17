@@ -49,15 +49,9 @@ alias gh='cd ~/github'
 alias active='ps auxw | grep post'
 
 # ls
-alias ls='ls -F --color=auto'            # a couple good defaults
-alias l='ls -F --color=auto'             # 50% less typing!
-alias ll='ls -Fhl --color=auto'          # long list
-alias la='ls -AFh --color=auto'          # list all
-alias lla='ls -AFl --color=auto'         # long list all
-alias lr='ls -FR --color=auto'           # list recursive
-alias llr='ls -FlR --color=auto'         # long list recursive
-alias lx='ls -lXB --color=auto'          # sort by extension
-alias lm='ls -Fl --color=always | most'  # pipe to most, with color
+alias ls='ls -aFG'	
+alias l='ls -lsh'
+alias ll='ls -alsh'
 
 # cd
 alias cd..='cd ..'
