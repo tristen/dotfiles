@@ -38,7 +38,6 @@ alias xclip='xclip -selection c'
 alias c='clear'
 alias mytar='tar -cvf'
 alias myuntar='tar -xvp'
-alias jekyll='--server --auto'
 
 # Paths I frequent
 alias ds='cd ~/devseed'
@@ -132,3 +131,12 @@ alias mapnikfonts='open /Library/Frameworks/Mapnik.framework/Versions/2.0/unix/l
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+##
+# Your previous /Users/tristen/.bash_profile file was backed up as /Users/tristen/.bash_profile.macports-saved_2012-09-08_at_22:53:21
+##
+
+# MacPorts Installer addition on 2012-09-08_at_22:53:21: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+

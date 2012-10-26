@@ -45,8 +45,8 @@ hi Directory      guifg=#93C05E ctermfg=148  gui=NONE cterm=NONE
 hi SignColumn     guifg=#93C05E ctermfg=148  guibg=#232526 ctermbg=235  gui=NONE cterm=NONE
 
 " Greyblue
-hi Comment        guifg=#465457 ctermfg=240
-hi SpecialComment guifg=#465457 ctermfg=241  gui=bold cterm=bold
+hi Comment        guifg=#5F6C6F ctermfg=241
+hi SpecialComment guifg=#5F6C6F ctermfg=241  gui=bold cterm=bold
 
 hi Ignore         guifg=#121212 ctermfg=233  gui=NONE cterm=NONE
 hi Macro          guifg=#C4BE89 ctermfg=180  gui=italic cterm=NONE
@@ -127,6 +127,7 @@ hi link htmlTag                 Tag
 hi link htmlHead                Tag
 hi link htmlSpecialTagName      Tag
 hi link htmlEndTag              Tag
+hi link htmlTagN                Tag
 hi link htmlArg                 Function
 
 hi htmlBoldItalic               gui=bold,italic             cterm=bold,italic

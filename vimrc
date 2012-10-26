@@ -63,6 +63,7 @@ set wildignore=*.o,*.obj,*.zip,*~
 set wildignore+=*DS_Store*
 set wildignore+=vendor/cache/**
 set wildignore+=tmp/**
+set wildignore+=_site/**     " Jekyll generated dir
 set wildignore+=*.jpg,*.gif
 
 " Nerdtree
@@ -111,6 +112,35 @@ function! <SID>SynStack ()
 endfunc
 noremap   <F3> :call <SID>SynStack()<CR>
 inoremap  <F3> :call <SID>SynStack()<CR>
+
+" http://laktek.com/2012/09/05/distraction-free-writing-with-vim
+function! IAWriter(bool)
+  if (a:bool)
+    colorscheme iawriter
+    set background=light
+    set gfn=Cousine:h14                " font to use
+    set lines=40 columns=100           " size of the editable area
+    set fuoptions=background:#00f5f6f6 " macvim specific setting for editor's background color
+    set guioptions-=r                  " remove right scrollbar
+    set laststatus=0                   " don't show status line
+    set noruler                        " don't show ruler
+    set fullscreen                     " go to fullscreen editing mode
+    set linebreak                      " break the lines on words
+  else
+    colorscheme fallsemo
+    set background=dark
+    set gfn=Droid\ Sans\ Mono:h11
+    set lines=40 columns=100
+    set fuoptions=background:#00f5f6f6
+    set guioptions-=r
+    set laststatus=0
+    set ruler
+    set fullscreen
+    set linebreak
+  endif
+endfunction
+noremap  <F5> :call IAWriter('true')<cr>
+inoremap <F5> <esc>:call IAWriter()<cr>
 
 " Strip whitespace from a file
 function! StripWhitespace ()
