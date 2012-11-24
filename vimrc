@@ -70,6 +70,9 @@ set wildignore+=*.jpg,*.gif
 noremap  <F2> :NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeToggle<cr>
 
+" Ignore files
+let NERDTreeIgnore=['_site']
+
 " TagBar
 noremap  <F8> :TagbarToggle<cr>
 
