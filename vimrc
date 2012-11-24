@@ -92,11 +92,11 @@ noremap <F1> <nop>
 
 if has('gui_macvim') && has('gui_running')
   "colorscheme molokai
-  colorscheme fallsemo
+  colorscheme superman
   set guifont=Droid\ Sans\ Mono:h11
   set guioptions=egmrt  " Remove the toolbar in MacVim
 else
-  colorscheme fallsemo
+  colorscheme superman
   set mouse=a   " Mouse support
   set t_Co=256
 endif
@@ -164,5 +164,5 @@ autocmd FileType javascript,json,py,python,txt,mkd,md setlocal shiftwidth=4 tabs
 au BufRead,BufNewFile *.less set filetype=css
 au BufRead,BufNewFile *.mss set filetype=carto
 au BufRead,BufNewFile *.{_,ejs} set filetype=html
-au BufRead,BufNewFile *.{bones,json} set filetype=javascript
+au BufRead,BufNewFile *.{bones,json,mml} set filetype=javascript
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} set filetype=mkd

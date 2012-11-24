@@ -40,9 +40,9 @@ alias mytar='tar -cvf'
 alias myuntar='tar -xvp'
 
 # Paths I frequent
-alias ds='cd ~/devseed'
+alias ds='cd ~/dev/devseed'
 alias d='cd ~/Desktop'
-alias gh='cd ~/github'
+alias gh='cd ~/dev/github'
 
 # Process
 alias active='ps auxw | grep post'
@@ -108,6 +108,9 @@ function xt() {
 # == PATHS ===========================================================
 
 export PATH="/usr/local/bin:/usr/bin:$PATH"
+
+# Postgres App
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 EVENT_NOKQUEUE=1
 

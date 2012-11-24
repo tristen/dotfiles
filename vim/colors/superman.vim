@@ -1,4 +1,4 @@
-" Vim color file
+" Vim color scheme
 "
 " Author: tristen <@fallsemo>
 
@@ -7,7 +7,7 @@ hi clear
 if exists('syntax_on')
   syntax reset
 endif
-let g:colors_name='fallsemo'
+let g:colors_name='superman'
 
 hi Normal         guifg=#93A1A1 ctermfg=247  guibg=#121212 ctermbg=233  gui=NONE cterm=NONE
 hi Cursor         guifg=#121212 ctermfg=233  guibg=#F8F8F0 ctermbg=255  gui=NONE cterm=NONE
@@ -137,6 +137,12 @@ hi htmlItalic                   gui=italic                  cterm=italic
 hi htmlUnderline                gui=underline               cterm=underline
 hi htmlUnderlineItalic          gui=underline,italic        cterm=underline,italic
 
+" xml
+hi link xmlTag                  Tag
+hi link xmlTagName              Tag
+hi link xmlEndTag               Tag
+hi link xmlAttrib               Function
+
 " css
 hi link cssImportant            Error
 hi link cssPseudoClass          Tag
@@ -158,25 +164,13 @@ hi link cssTableProp            Define
 hi link cssUiProp               Define
 hi link cssGeneratedContentProp Define
 
+" CartoCSS (mss)
+hi link cartoProp               Define
+hi link cartoBraces             Function
+hi link cartoValueNumber        Boolean
+hi link cartoStringQ            Boolean
+hi link cartoVariable           Tag
+
 " Ruby
 hi link rubySharpBang           Normal
 hi link rubyControl             Comment
-
-" Javascript
-hi link javaScriptNumber        Boolean
-hi link javaScriptRegexpString  Boolean
-hi link javaScriptPrototype     Type        " prototype
-hi link javaScriptType          Type        " const undefined void yield
-hi link javaScriptIdentifier    Identifier  " var this
-hi link javaScriptLabel         Label       " length
-hi link javaScriptGlobalObjects Class
-hi link javaScriptFunction      Statement
-hi link javaScriptSource        Statement   " import export
-hi link javaScriptOperator      Statement   " delete new in instanceof let typeof
-hi link javaScriptBoolean       Statement   " true false
-hi link javaScriptNull          Statement   " null
-hi link javaScriptConditional   Statement   " if else
-hi link javaScriptRepeat        Statement   " do while for
-hi link javaScriptBranch        Statement   " break continue switch case default return
-hi link javaScriptStatement     Statement   " try catch throw with finally
-hi link javascriptEnvComment    Comment     " executable
