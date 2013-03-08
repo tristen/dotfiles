@@ -61,6 +61,7 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 # git
+alias git=hub
 alias gl='git log --oneline --decorate'
 alias gd='git diff --word-diff'
 alias gs='git status -sb'
