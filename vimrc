@@ -9,6 +9,7 @@ call pathogen#runtime_append_all_bundles()
 set backspace=indent,eol,start
 set history=100
 set showcmd
+set colorcolumn=80
 
 " show matching braces/parens
 set nocompatible
