@@ -48,6 +48,13 @@ set lbr
 
 " == PLUGIN OPTIONS =======================================
 
+" Ack
+nnoremap <leader>a :Ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Tern
+so ~/dev/github/tern/vim/tern.vim
+
 " gist-vim
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
