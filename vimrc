@@ -46,14 +46,15 @@ set wrap
 set formatoptions=1
 set lbr
 
+" Per directory .vimrc
+set exrc
+set secure
+
 " == PLUGIN OPTIONS =======================================
 
 " Ack
 nnoremap <leader>a :Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" Tern
-so ~/dev/github/tern/vim/tern.vim
 
 " gist-vim
 let g:gist_clip_command = 'pbcopy'

@@ -108,6 +108,12 @@ function xt() {
 
 # == PATHS ===========================================================
 
+# Make GEMS work with a brew install of ruby
+export PATH=$(brew --prefix ruby)/bin:$PATH
+
+# Mapnik SDK
+export PATH=/opt/mapnik/bin:$PATH
+
 export PATH="/usr/local/bin:/usr/bin:$PATH"
 
 # Postgres App
