@@ -176,5 +176,5 @@ autocmd FileType javascript,json,py,python,txt,mkd,md setlocal shiftwidth=4 tabs
 au BufRead,BufNewFile *.less set filetype=css
 au BufRead,BufNewFile *.mss set filetype=carto
 au BufRead,BufNewFile *.{_,ejs} set filetype=html
-au BufRead,BufNewFile *.{bones,json,mml} set filetype=javascript
+au BufRead,BufNewFile *.{bones,json,geojson,mml} set filetype=javascript
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} set filetype=mkd
