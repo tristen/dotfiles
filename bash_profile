@@ -116,6 +116,10 @@ export PATH=/opt/mapnik/bin:$PATH
 
 export PATH="/usr/local/bin:/usr/bin:$PATH"
 
+# GO
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # Postgres App
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
