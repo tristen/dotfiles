@@ -67,3 +67,6 @@
 [submodule "vim/bundle/tern_for_vim"]
 	path = vim/bundle/tern_for_vim
 	url = git@github.com:marijnh/tern_for_vim.git
+[submodule "vim/bundle/vim-snippets"]
+	path = vim/bundle/vim-snippets
+	url = git@github.com:honza/vim-snippets.git
