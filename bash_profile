@@ -1,5 +1,8 @@
-# Simplify Command Prompt
-PS1='$ '
+# Customized Command Prompt
+function parse_git_branch {
+   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\$(parse_git_branch)\[\e[0m\]\[\e[36;0m\]$ "
 
 export EDITOR='vim'
 
