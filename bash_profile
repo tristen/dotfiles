@@ -42,8 +42,11 @@ alias c='clear'
 alias mytar='tar -cvf'
 alias myuntar='tar -xvp'
 
+# Run Chrome in unsafe mode
+alias unsafechrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
+
 # Paths I frequent
-alias ds='cd ~/dev/devseed'
+alias ds='cd ~/dev/mapbox'
 alias d='cd ~/Desktop'
 alias gh='cd ~/dev/github'
 
