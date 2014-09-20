@@ -105,7 +105,7 @@ noremap <F1> <nop>
 if has('gui_macvim') && has('gui_running')
   "colorscheme molokai
   colorscheme superman
-  set guifont=Droid\ Sans\ Mono:h11
+  set guifont=M+_1m_light:h12
   set guioptions=egmrt  " Remove the toolbar in MacVim
 else
   colorscheme superman

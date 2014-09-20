@@ -10,13 +10,14 @@ export EDITOR='vim'
 complete -cf sudo
 
 # Node Version Manager
-. ~/.nvm/nvm.sh
+# . ~/.nvm/nvm.sh
 
 # Key Bindings
 bind -f ~/.bash_keybindings
 
-# GIT Autocompletion
-source ~/.git-completion.sh
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
 
 # Colors
 export GREP_OPTIONS='--color=auto'
@@ -114,14 +115,6 @@ function xt() {
 
 # == PATHS ===========================================================
 
-# Make GEMS work with a brew install of ruby
-export PATH=$(brew --prefix ruby)/bin:$PATH
-
-# Mapnik SDK
-export PATH=/opt/mapnik/bin:$PATH
-
-export PATH="/usr/local/bin:/usr/bin:$PATH"
-
 # GO
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -129,34 +122,5 @@ export PATH=$PATH:$GOPATH/bin
 # Postgres App
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
-EVENT_NOKQUEUE=1
-
-export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
-
-# Mapnik
-MAPNIK=/Library/Frameworks/Mapnik.framework
-  export PATH=$MAPNIK/Programs:$PATH
-  export NODE_PATH=$MAPNIK/Node:$NODE_PATH
-  export PYTHONPATH=$MAPNIK/Python:$PYTHONPATH
-
-# ~/.bin executables
-export PATH=~/bin:$PATH
-# Settings for Mapnik.framework Installer to enable Mapnik programs and python bindings
-export PATH=/Library/Frameworks/Mapnik.framework/Programs:$PATH
-export PYTHONPATH=/Library/Frameworks/Mapnik.framework/Python:$PYTHONPATH
-
-# Open Mapnik font folder
-alias mapnikfonts='open /Library/Frameworks/Mapnik.framework/Versions/2.0/unix/lib/mapnik2/fonts/'
-
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-##
-# Your previous /Users/tristen/.bash_profile file was backed up as /Users/tristen/.bash_profile.macports-saved_2012-09-08_at_22:53:21
-##
-
-# MacPorts Installer addition on 2012-09-08_at_22:53:21: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
+# Because Homebrew told me too export
+# PATH='/usr/local/bin:$PATH'
