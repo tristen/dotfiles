@@ -18,7 +18,7 @@ sh bootstrap.sh
 - [ ] Generate SSH keypair
 - [ ] Add new SSH key to GitHub
 - [ ] Remove any unused SSH keys from GitHub
-- [ ] `[brew](http://brew.sh/) install`: 
+- [ ] [brew](http://brew.sh/) install: 
 
 ```
 hub
