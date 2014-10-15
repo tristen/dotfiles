@@ -9,8 +9,10 @@ export EDITOR='vim'
 # let autocomplete work with sudo
 complete -cf sudo
 
-# Node Version Manager
-# . ~/.nvm/nvm.sh
+# Git autocompletion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
 
 # Key Bindings
 bind -f ~/.bash_keybindings

@@ -19,7 +19,7 @@ sh bootstrap.sh
 - [ ] Generate SSH keypair
 - [ ] Add new SSH key to GitHub
 - [ ] Remove any unused SSH keys from GitHub
-- [ ] brew install `hub node git cask`
+- [ ] brew install `hub node git cask bash-completion`
 - [ ] Remap Capslock to Esc with `karabiner` and `seil` (use brew cask install)
 - [ ] Setup git globals. ie:
 
