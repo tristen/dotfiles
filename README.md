@@ -29,4 +29,8 @@ git config --global user.email 'YOURNAME@EMAIL.COM'
 git config --global help.autocorrect 1
 ```
 
+- [ ] Create the following directories:
+
+`~/.vim/swap` & `~/dev/github` & `~/dev/mapbox`
+
 - [ ] Clone this repo, set up as above
