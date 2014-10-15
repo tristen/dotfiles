@@ -19,5 +19,6 @@ sh bootstrap.sh
 - [ ] Generate SSH keypair
 - [ ] Add new SSH key to GitHub
 - [ ] Remove any unused SSH keys from GitHub
-- [ ] brew install `hub node git`
+- [ ] brew install `hub node git cask`
 - [ ] Clone this repo, set up as above
+- [ ] Remap Capslock to Esc with `karabiner` and `seil` (use brew cask install)
