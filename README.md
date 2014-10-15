@@ -13,15 +13,24 @@ git submodule foreach 'git pull origin master'
 sh bootstrap.sh
 ```
 
-
 ### Fresh start setup checklist
 
 - [ ] Generate SSH keypair
 - [ ] Add new SSH key to GitHub
 - [ ] Remove any unused SSH keys from GitHub
-- [ ] brew install `hub node git cask bash-completion the_silver_searcher`
+- [ ] brew install: 
+
+```
+hub
+node
+git
+cask
+bash-completion
+the_silver_searcher
+```
+
 - [ ] Remap Capslock to Esc with `karabiner` and `seil` (use brew cask install)
-- [ ] Setup git globals. ie:
+- [ ] Setup git globals:
 
 ```sh
 git config --global user.name 'YOURNAME'
@@ -32,6 +41,10 @@ git config --global core.excludesfile ~/.gitignore_global
 
 - [ ] Create the following directories:
 
-`~/.vim/swap` & `~/dev/github` & `~/dev/mapbox`
+```
+~/.vim/swap
+~/dev/github
+~/dev/mapbox
+```
 
 - [ ] Clone this repo, set up as above
