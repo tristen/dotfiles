@@ -12,3 +12,12 @@ git pull
 git submodule foreach 'git pull origin master'
 sh bootstrap.sh
 ```
+
+
+### Fresh start setup checklist
+
+- [ ] Generate SSH keypair
+- [ ] Add new SSH key to GitHub
+- [ ] Remove any unused SSH keys from GitHub
+- [ ] brew install `hub node git`
+- [ ] Clone this repo, set up as above
