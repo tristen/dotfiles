@@ -27,6 +27,9 @@ git
 cask
 bash-completion
 the_silver_searcher
+awscli
+gpg
+s3cmd
 ```
 
 - [ ] Remap Capslock to Esc with `karabiner` and `seil` (use brew cask install)
