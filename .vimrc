@@ -170,7 +170,7 @@ set tabstop=2
 set softtabstop=2
 set expandtab
 
-autocmd FileType javascript,json,py,python,txt,mkd,md setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType json,py,python,txt,mkd,md setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 " == CODE HIGHLIGHTING  ===================================
 au BufRead,BufNewFile *.less set filetype=css

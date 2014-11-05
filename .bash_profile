@@ -126,3 +126,5 @@ PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 # Because Homebrew told me too export
 # PATH='/usr/local/bin:$PATH'
+
+$(npm root -g)/mapbox-cli/mapbox.sh
