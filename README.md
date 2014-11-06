@@ -32,6 +32,7 @@ gpg
 s3cmd
 ```
 
+- [ ] Install [gnu-sed](https://sagebionetworks.jira.com/wiki/display/PLFM/Fixing+sed+on+OSx)
 - [ ] Remap Capslock to Esc with `karabiner` and `seil` (use brew cask install)
 - [ ] Setup git globals:
 
