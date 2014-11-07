@@ -9,11 +9,6 @@ export EDITOR='vim'
 # let autocomplete work with sudo
 complete -cf sudo
 
-# Git autocompletion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
 # Key Bindings
 bind -f ~/.bash_keybindings
 
@@ -61,14 +56,6 @@ alias ls='ls -aFG'
 alias l='ls -lsh'
 alias ll='ls -alsh'
 
-# cd
-alias cd..='cd ..'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-alias ......='cd ../../../../..'
-
 # git
 alias git=hub
 alias gl='git log --oneline --decorate'
@@ -76,15 +63,6 @@ alias gd='git diff --word-diff'
 alias gs='git status -sb'
 alias gp='git pull'
 alias oc='octogit'
-
-# Linting
-alias lint='jshint'
-# IRC
-alias irc='irssi'
-# Edit this file
-alias editalias='mvim ~/.bashrc'
-# Edit hosts
-alias edithosts='mvim ~/.ssh/config'
 
 # == FUNCTIONS =======================================================
 
@@ -121,10 +99,4 @@ function xt() {
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# Postgres App
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-
-# Because Homebrew told me too export
-# PATH='/usr/local/bin:$PATH'
-
-$(npm root -g)/mapbox-cli/mapbox.sh
+source "$(npm root -g)/mapbox-cli/mapbox.sh"
