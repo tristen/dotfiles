@@ -12,6 +12,10 @@ Thumbs.db
 *.un~
 Session.vim
 
+# Node #
+# ######################
+node_modules
+
 # Jekyll #
 # ######################
 _site/*
