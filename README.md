@@ -9,7 +9,7 @@ sh bootstrap.sh
 
 ``` shell
 git pull
-git submodule update --recursive
+git submodule foreach 'git pull origin master'
 sh bootstrap.sh
 ```
 
