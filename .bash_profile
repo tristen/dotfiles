@@ -47,6 +47,7 @@ alias unsafechrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chro
 alias ds='cd ~/dev/mapbox'
 alias d='cd ~/Desktop'
 alias gh='cd ~/dev/github'
+alias osm='cd ~/dev/osm'
 
 # Process
 alias active='ps auxw | grep post'
