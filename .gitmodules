@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/vim-glsl"]
 	path = .vim/bundle/vim-glsl
 	url = git@github.com:tikhomirov/vim-glsl.git
+[submodule ".vim/bundle/vim-ags"]
+	path = .vim/bundle/vim-ags
+	url = git@github.com:gabesoft/vim-ags.git
