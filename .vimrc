@@ -64,6 +64,9 @@ let g:gist_detect_filetype = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
+" Syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+
 set wildmode=list:longest
 "enable ctrl-n and ctrl-p to scroll thru matches
 set wildmenu
