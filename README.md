@@ -52,4 +52,10 @@ git config --global color.ui true
 ~/dev/mapbox
 ```
 
+- [ ] `npm install -g` the following:
+
+```
+eslint
+```
+
 - [ ] Clone this repo, set up as above
