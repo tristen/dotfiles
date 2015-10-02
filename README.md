@@ -39,6 +39,7 @@ s3cmd
 ```sh
 git config --global user.name 'YOURNAME'
 git config --global user.email 'YOURNAME@EMAIL.COM'
+git config --global push.default simple
 git config --global help.autocorrect 1
 git config --global core.excludesfile ~/.gitignore_global
 git config --global color.ui true
