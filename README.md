@@ -48,15 +48,17 @@ git config --global color.ui true
 - [ ] Create the following directories:
 
 ```
-~/.vim/swap
-~/dev/github
-~/dev/mapbox
+mkdir ~/.vim/swap
+mkdir ~/dev
+mkdir ~/dev/github
+mkdir ~/dev/mapbox
 ```
 
 - [ ] `npm install -g` the following:
 
 ```
 eslint
+git+ssh://git@github.com/mapbox/mapbox-cli.git
 ```
 
 - [ ] Clone this repo, set up as above
