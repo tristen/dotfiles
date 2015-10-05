@@ -18,7 +18,8 @@ sh bootstrap.sh
 - [ ] Generate SSH keypair
 - [ ] Add new SSH key to GitHub
 - [ ] Remove any unused SSH keys from GitHub
-- [ ] [brew](http://brew.sh/) install: 
+- [ ] Clone this repo, set up as above
+- [ ] Install [brew](http://brew.sh/) and the following:
 
 ```
 hub
@@ -32,6 +33,21 @@ gpg
 s3cmd
 ```
 
+- [ ] `brew cask install`:
+
+```
+1password
+google-chrome
+karabiner
+macvim
+seil
+dropbox
+iterm2
+licecap
+nvalt
+slack
+```
+
 - [ ] `gem install`:
 
 ```
@@ -39,12 +55,12 @@ jekyll
 ```
 
 - [ ] Install [gnu-sed](https://sagebionetworks.jira.com/wiki/display/PLFM/Fixing+sed+on+OSx)
-- [ ] Remap Capslock to Esc with `karabiner` and `seil` (use brew cask install)
-- [ ] Setup git globals:
+- [ ] Remap Capslock to Esc with `seil`
+- [ ] Setup git globals (replacing my credentials with your own):
 
 ```sh
-git config --global user.name 'YOURNAME'
-git config --global user.email 'YOURNAME@EMAIL.COM'
+git config --global user.name 'tristen'
+git config --global user.email 'tristen.brown@gmail.com'
 git config --global push.default simple
 git config --global help.autocorrect 1
 git config --global core.excludesfile ~/.gitignore_global
@@ -66,5 +82,3 @@ mkdir ~/dev/mapbox
 eslint
 git+ssh://git@github.com/mapbox/mapbox-cli.git
 ```
-
-- [ ] Clone this repo, set up as above
