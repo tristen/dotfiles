@@ -23,13 +23,19 @@ sh bootstrap.sh
 ```
 hub
 node
-git
+ruby
 cask
 bash-completion
 the_silver_searcher
 awscli
 gpg
 s3cmd
+```
+
+- [ ] `gem install`:
+
+```
+jekyll
 ```
 
 - [ ] Install [gnu-sed](https://sagebionetworks.jira.com/wiki/display/PLFM/Fixing+sed+on+OSx)
