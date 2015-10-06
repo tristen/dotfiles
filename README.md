@@ -1,3 +1,5 @@
+_TODO: Wrap all of this into a nice lil script_
+
 To set things up on a fresh system, just clone the repository and run:
 
 ``` sh
@@ -46,6 +48,7 @@ iterm2
 licecap
 nvalt
 slack
+vlc
 ```
 
 - [ ] `gem install`:
