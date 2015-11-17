@@ -100,7 +100,7 @@ function xt() {
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-source "$(npm root -g)/mapbox-cli/mapbox.sh"
+source "$(npm root -g)/mbxcli/mapbox.sh"
 
 # postgres.app
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
