@@ -57,15 +57,14 @@ alias ls='ls -aFG'
 alias l='ls -lsh'
 alias ll='ls -alsh'
 
-# git
+# Random
 alias git=hub
-alias gl='git log --oneline --decorate'
-alias gd='git diff --word-diff'
-alias gs='git status -sb'
-alias gp='git pull'
-alias oc='octogit'
 
 # == FUNCTIONS =======================================================
+
+function weather() {
+  curl wttr.in/$1
+}
 
 function pngencode() {
   # pngencode = BASE-64 encode an image
