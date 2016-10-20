@@ -41,8 +41,8 @@ s3cmd
 1password
 google-chrome
 karabiner
+karabiner elements (https://github.com/tekezo/Karabiner-Elements)
 macvim
-seil
 dropbox
 iterm2
 licecap
@@ -58,7 +58,7 @@ jekyll
 ```
 
 - [ ] Install [gnu-sed](https://sagebionetworks.jira.com/wiki/display/PLFM/Fixing+sed+on+OSx)
-- [ ] Remap Capslock to Esc with `seil`
+- [ ] Remap Capslock to Esc using Karabiner Elements
 - [ ] Setup git globals (replacing my credentials with your own):
 
 ```sh
