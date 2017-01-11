@@ -85,3 +85,5 @@ mkdir ~/dev/mapbox
 eslint
 git+ssh://git@github.com/mapbox/mapbox-cli.git
 ```
+
+- [ ] Add desired Quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
