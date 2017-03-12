@@ -33,6 +33,7 @@ the_silver_searcher
 awscli
 gpg
 s3cmd
+yarn
 ```
 
 - [ ] `brew cask install`:
