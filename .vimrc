@@ -2,9 +2,6 @@
 
 set nocompatible
 
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-
 " backspace/delete like I'm used to
 set backspace=indent,eol,start
 set history=100
@@ -52,6 +49,8 @@ set secure
 
 " == PLUGIN OPTIONS =======================================
 
+execute pathogen#infect()
+
 " Ack
 nnoremap <leader>a :Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -60,16 +59,19 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
 
-" Ctrlp
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
-
 " Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = '[ -f $(npm bin)/eslint ] && $(npm bin)/eslint || eslint'
 
 set wildmode=list:longest
-"enable ctrl-n and ctrl-p to scroll thru matches
-set wildmenu
+
 "stuff to ignore when tab completing
 set wildignore=*.o,*.obj,*.zip,*~
 set wildignore+=*DS_Store*
@@ -87,6 +89,9 @@ let NERDTreeIgnore=['_site']
 
 " TagBar
 noremap  <F8> :TagbarToggle<cr>
+
+" vim-jsx
+let g:jsx_ext_required = 0
 
 " == KEY BINDINGS =========================================
 
