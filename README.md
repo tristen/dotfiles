@@ -39,17 +39,20 @@ yarn
 - [ ] `brew cask install`:
 
 ```
-1password
 google-chrome
-karabiner
-karabiner elements (https://github.com/tekezo/Karabiner-Elements)
-macvim
-dropbox
+1password
+adobe-creative-cloud
 iterm2
-licecap
 nvalt
-slack
+spotify
+backblaze
+licecap
+skitch
 vlc
+flux
+macvim
+slack
+dropbox
 ```
 
 - [ ] `gem install`:
