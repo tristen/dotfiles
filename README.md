@@ -53,6 +53,7 @@ flux
 macvim
 slack
 dropbox
+paparazzi
 ```
 
 - [ ] `gem install`:
