@@ -54,6 +54,7 @@ macvim
 slack
 dropbox
 paparazzi
+prey # With API_KEY="<KEY>" set
 ```
 
 - [ ] `gem install`:
