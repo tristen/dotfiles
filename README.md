@@ -88,7 +88,11 @@ mkdir ~/dev/mapbox
 - [ ] `npm install -g` the following:
 
 ```
+browserify
+documentation
 eslint
+serve
+tap
 git+ssh://git@github.com/mapbox/mapbox-cli.git
 ```
 
