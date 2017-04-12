@@ -60,6 +60,7 @@ prey # With API_KEY="<KEY>" set
 - [ ] `gem install`:
 
 ```
+bundler
 jekyll
 ```
 
