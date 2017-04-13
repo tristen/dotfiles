@@ -90,6 +90,7 @@ mkdir ~/dev/mapbox
 
 ```
 browserify
+budo
 documentation
 eslint
 serve
