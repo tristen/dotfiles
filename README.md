@@ -34,6 +34,7 @@ awscli
 gpg
 s3cmd
 yarn
+libpng
 ```
 
 - [ ] `brew cask install`:
