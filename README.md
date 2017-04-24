@@ -63,6 +63,7 @@ prey # With API_KEY="<KEY>" set
 ```
 bundler
 jekyll
+cocoapods
 ```
 
 - [ ] Install [gnu-sed](https://sagebionetworks.jira.com/wiki/display/PLFM/Fixing+sed+on+OSx)
