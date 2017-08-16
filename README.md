@@ -11,7 +11,7 @@ sh bootstrap.sh
 
 ``` shell
 git pull
-git submodule foreach 'git pull origin master'
+git submodule foreach 'git pull origin HEAD'
 sh bootstrap.sh
 ```
 
