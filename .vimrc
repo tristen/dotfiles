@@ -99,6 +99,9 @@ noremap  <F8> :TagbarToggle<cr>
 " vim-jsx
 let g:jsx_ext_required = 0
 
+" vim-javascript
+let g:javascript_plugin_flow = 1
+
 " == KEY BINDINGS =========================================
 
 " Disable the arrow keys to learn the hard way
