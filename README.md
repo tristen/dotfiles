@@ -11,7 +11,7 @@ sh bootstrap.sh
 
 ``` shell
 git pull
-git submodule foreach 'git pull origin master'
+git submodule foreach 'git pull origin HEAD'
 sh bootstrap.sh
 ```
 
@@ -34,6 +34,7 @@ awscli
 gpg
 s3cmd
 yarn
+libpng
 ```
 
 - [ ] `brew cask install`:
@@ -53,12 +54,16 @@ flux
 macvim
 slack
 dropbox
+paparazzi
+prey # With API_KEY="<KEY>" set
 ```
 
 - [ ] `gem install`:
 
 ```
+bundler
 jekyll
+cocoapods
 ```
 
 - [ ] Install [gnu-sed](https://sagebionetworks.jira.com/wiki/display/PLFM/Fixing+sed+on+OSx)
@@ -86,7 +91,12 @@ mkdir ~/dev/mapbox
 - [ ] `npm install -g` the following:
 
 ```
+browserify
+budo
+documentation
 eslint
+serve
+tap
 git+ssh://git@github.com/mapbox/mapbox-cli.git
 ```
 
