@@ -1,36 +1,27 @@
+Dotfiles
+---
+
 _TODO: Wrap all of this into a nice lil script_
 
-To set things up on a fresh system, just clone the repository and run:
+### Fresh start checklist
 
-``` sh
-git submodule update --init
-sh bootstrap.sh
-```
+The folowing steps assumes you are starting from scratch.
 
-### Updating
-
-``` shell
-git pull
-git submodule foreach 'git pull origin HEAD'
-sh bootstrap.sh
-```
-
-### Fresh start setup checklist
-
-- [ ] Generate SSH keypair
-- [ ] Add new SSH key to GitHub
+- [ ] [Generate a new SSH keypair](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key)
+- [ ] [Add new SSH key to GitHub](https://github.com/settings/keys)
 - [ ] Remove any unused SSH keys from GitHub
-- [ ] Clone this repo, set up as above
+- [ ] Clone this repo and run
+
+    git submodule update --init
+    sh bootstrap.sh
+
 - [ ] Install [brew](http://brew.sh/) and the following:
 
 ```
 hub
-node
-ruby
 cask
 bash-completion
 the_silver_searcher
-awscli
 gpg
 s3cmd
 yarn
@@ -50,25 +41,14 @@ backblaze
 licecap
 skitch
 vlc
-flux
 macvim
 slack
 dropbox
-paparazzi
-prey # With API_KEY="<KEY>" set
-```
-
-- [ ] `gem install`:
-
-```
-bundler
-jekyll
-cocoapods
 ```
 
 - [ ] Install [gnu-sed](https://sagebionetworks.jira.com/wiki/display/PLFM/Fixing+sed+on+OSx)
-- [ ] Remap Capslock to Esc using Karabiner Elements
-- [ ] Setup git globals (replacing my credentials with your own):
+- [ ] Remap Capslock to Esc from `System preferences > Keyboard > Modifier Keys...`.
+- [ ] Set the following git globals (replacing my credentials with your own):
 
 ```sh
 git config --global user.name 'tristen'
@@ -89,16 +69,22 @@ mkdir ~/dev/github
 mkdir ~/dev/mapbox
 ```
 
+- [ ] Log in to npm `npm adduser`.
 - [ ] `npm install -g` the following:
 
 ```
-browserify
-budo
-documentation
 eslint
 serve
-tap
-git+ssh://git@github.com/mapbox/mapbox-cli.git
 ```
 
+- [ ] Setup work commandline tool
 - [ ] Add desired Quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
+
+### Updating
+
+``` shell
+git pull
+git submodule foreach 'git pull origin HEAD'
+sh bootstrap.sh
+```
+
