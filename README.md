@@ -11,7 +11,7 @@ The folowing steps assumes you are starting from scratch.
 brew install hub node cask bash-completion the_silver_searcher gpg s3cmd libpng
 ```
 
-- [ ] `brew cask install`:
+- [ ] Use `brew cask` to install the following applications:
 
 ```
 brew cask install google-chrome 1password adobe-creative-cloud iterm2 nvalt spotify backblaze licecap vlc macvim slack dropbox
