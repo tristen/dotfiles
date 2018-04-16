@@ -64,7 +64,7 @@ npm adduser
 - [ ] Install the following globals from npm:
 
 ```
-npm install -g eslint serve
+npm install -g eslint serve commitizen
 ```
 
 - [ ] Add desired Quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
