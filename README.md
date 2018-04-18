@@ -14,7 +14,7 @@ brew install hub node cask bash-completion the_silver_searcher gpg s3cmd libpng
 - [ ] Use `brew cask` to install the following applications:
 
 ```
-brew cask install google-chrome 1password adobe-creative-cloud iterm2 nvalt spotify backblaze licecap vlc macvim slack dropbox
+brew cask install google-chrome 1password adobe-creative-cloud iterm2 nvalt spotify backblaze licecap vlc macvim slack dropbox xquartz inkscape skitch
 ```
 
 - [ ] Remap CapsLock to ESC from `System preferences > Keyboard > Modifier Keys...`.
