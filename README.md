@@ -30,12 +30,6 @@ git config --global color.ui true
 git config --global alias.up 'pull --rebase --autostash'
 ```
 
-- [ ] Create the following directories:
-
-```
-mkdir ~/.vim/swap ~/dev ~/dev/github ~/dev/mapbox
-```
-
 - [ ] Generate a new SSH keypair (replacing my email with your own):
 
 ```
@@ -52,7 +46,19 @@ pbcopy < ~/.ssh/id_rsa.pub
 - [ ] Clone this repo:
 
 ```
-git clone --recurse-submodules git@github.com:tristen/dotfiles.git && ./bootstrap.sh
+cd ~/ && git clone --recurse-submodules git@github.com:tristen/dotfiles.git
+```
+
+- [ ] Create the following directories:
+
+```
+mkdir ~/.vim/swap ~/dev ~/dev/github ~/dev/mapbox
+```
+
+- [ ] Run `bootstrap.sh`
+
+```
+./dotfiles/bootstrap.sh
 ```
 
 - [ ] Log in to npm:
