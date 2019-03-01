@@ -14,7 +14,7 @@ brew install hub node cask bash-completion the_silver_searcher gpg s3cmd libpng
 - [ ] Use `brew cask` to install the following applications:
 
 ```
-brew cask install google-chrome 1password adobe-creative-cloud iterm2 nvalt spotify backblaze licecap vlc macvim slack dropbox
+brew cask install google-chrome 1password adobe-creative-cloud iterm2 nvalt spotify backblaze licecap vlc macvim slack dropbox skitch
 ```
 
 - [ ] Remap CapsLock to ESC from `System preferences > Keyboard > Modifier Keys...`.
@@ -28,12 +28,6 @@ git config --global help.autocorrect 1
 git config --global core.excludesfile ~/.gitignore_global
 git config --global color.ui true
 git config --global alias.up 'pull --rebase --autostash'
-```
-
-- [ ] Create the following directories:
-
-```
-mkdir ~/.vim/swap ~/dev ~/dev/github ~/dev/mapbox
 ```
 
 - [ ] Generate a new SSH keypair (replacing my email with your own):
@@ -52,7 +46,19 @@ pbcopy < ~/.ssh/id_rsa.pub
 - [ ] Clone this repo:
 
 ```
-git clone --recurse-submodules git@github.com:tristen/dotfiles.git && ./bootstrap.sh
+cd ~/ && git clone --recurse-submodules git@github.com:tristen/dotfiles.git
+```
+
+- [ ] Create the following directories:
+
+```
+mkdir ~/.vim/swap ~/dev ~/dev/github ~/dev/mapbox
+```
+
+- [ ] Run `bootstrap.sh`
+
+```
+./dotfiles/bootstrap.sh
 ```
 
 - [ ] Log in to npm:
@@ -64,11 +70,13 @@ npm adduser
 - [ ] Install the following globals from npm:
 
 ```
-npm install -g eslint serve
+npm install -g eslint serve commitizen
 ```
 
 - [ ] Add desired Quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
-- [ ] Set up work (Mapbox) commandline tool
+- [ ] Clone and set up work (Mapbox) commandline tool
+- [ ] Clone Mapbox design repo and install brand fonts
+- [ ] Install a [Native version of Inkscape](http://www.inkscapeforum.com/viewtopic.php?t=23191)
 
 ### Updating
 
