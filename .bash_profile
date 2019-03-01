@@ -99,7 +99,6 @@ function xt() {
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-source "$(npm root -g)/mbxcli/mapbox.sh"
 source ~/.git-completion.sh
 
 # postgres.app
