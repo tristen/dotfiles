@@ -1,43 +1,105 @@
-# Customized Command Prompt
-function parse_git_branch {
-   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-export PS1="\$(parse_git_branch)\[\e[0m\]\[\e[36;0m\]$ "
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export EDITOR='vim'
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/tristenbrown/.oh-my-zsh"
 
-# Colors
-export GREP_OPTIONS='--color=auto'
-export CLICOLOR=1;
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
 
-# Bash History
-export HISTCONTROL=erasedups
-export HISTFILE=$HOME/.bash_history
-export HISTSIZE=50000
-export HISTIGNORE='&:ls:cd ~:cd ..:[bf]g:exit:h:history'
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-# == ALIASES =========================================================
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
 
-# Default Options to commands
-alias df='df -h'
-alias grep='grep --color=auto'
-alias mkdir='mkdir -p'
-alias mv='mv -vi'
-alias rm='rm -v'
-alias vlc='vlc --extraintf http'
-alias xclip='xclip -selection c'
-alias c='clear'
-alias mytar='tar -cvf'
-alias myuntar='tar -xvp'
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
-# Run Chrome in unsafe mode
-alias unsafechrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
 
-# Paths I frequent
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
 alias ds='cd ~/dev/mapbox'
 alias d='cd ~/Desktop'
 alias gh='cd ~/dev/github'
-alias osm='cd ~/dev/osm'
 
 # Process
 alias active='ps auxw | grep post'
@@ -50,8 +112,7 @@ alias ll='ls -alsh'
 # Random
 alias git=hub
 
-# == FUNCTIONS =======================================================
-
+# Functions
 function weather() {
   curl wttr.in/$1
 }
@@ -60,34 +121,3 @@ function pngencode() {
   # pngencode = BASE-64 encode an image
   openssl enc -base64 -in $1 | tr -d '\n' | pbcopy
 }
-
-function xt() {
-  # xt = eXTract, a wrapper to extract many different archive formats
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xvjf $1     ;;
-      *.tar.gz)    tar xvzf $1     ;;
-      *.bz2)       bunzip2 $1      ;;
-      *.rar)       unrar x $1      ;;
-      *.gz)        gunzip $1       ;;
-      *.tar)       tar xvf $1      ;;
-      *.tbz2)      tar xvjf $1     ;;
-      *.tgz)       tar xvzf $1     ;;
-      *.zip)       unzip $1        ;;
-      *.Z)         uncompress $1   ;;
-      *.7z)        7z x $1         ;;
-      *)           echo "'$1' cannot be extracted via >extract<" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
-
-# == PATHS ===========================================================
-
-# GO
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-# postgres.app
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH

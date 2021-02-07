@@ -8,7 +8,7 @@ The folowing steps assumes you are starting from scratch.
 - [ ] Install [brew](http://brew.sh/) and the following:
 
 ```
-brew install hub node cask google-chrome 1password iterm2 nvalt spotify backblaze licecap neovim dropbox
+brew install hub node cask google-chrome 1password iterm2 nvalt spotify backblaze licecap neovim dropbox slack the_silver_searcher
 ```
 
 - [ ] Install neovim https://github.com/junegunn/vim-plug#neovim
