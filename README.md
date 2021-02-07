@@ -8,14 +8,10 @@ The folowing steps assumes you are starting from scratch.
 - [ ] Install [brew](http://brew.sh/) and the following:
 
 ```
-brew install hub node cask bash-completion the_silver_searcher gpg s3cmd libpng
+brew install hub node cask google-chrome 1password iterm2 nvalt spotify backblaze licecap neovim dropbox
 ```
 
-- [ ] Use `brew cask` to install the following applications:
-
-```
-brew cask install google-chrome 1password adobe-creative-cloud iterm2 nvalt spotify backblaze licecap vlc macvim slack dropbox skitch
-```
+- [ ] Install neovim https://github.com/junegunn/vim-plug#neovim
 
 - [ ] Remap CapsLock to ESC from `System preferences > Keyboard > Modifier Keys...`.
 - [ ] Set the following git globals (replacing my credentials with your own):
