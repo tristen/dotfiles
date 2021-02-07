@@ -53,6 +53,17 @@ set wildmenu
 " redraw only when we need to.
 set lazyredraw
 
+" NERDtree like setup for netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+
 " == PLUGINS ==============================================
 call plug#begin()
 
@@ -90,8 +101,6 @@ call plug#end()
 
 colorscheme superman
 
-" Disable netrw
-let loaded_netrwPlugin = 1
 augroup my_dirvish_events
   autocmd FileType dirvish sort r /[^\/]$/
 augroup END
