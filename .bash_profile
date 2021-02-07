@@ -6,9 +6,6 @@ export PS1="\$(parse_git_branch)\[\e[0m\]\[\e[36;0m\]$ "
 
 export EDITOR='vim'
 
-# Key Bindings
-bind -f ~/.bash_keybindings
-
 # Colors
 export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1;
