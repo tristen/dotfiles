@@ -6,15 +6,8 @@ export PS1="\$(parse_git_branch)\[\e[0m\]\[\e[36;0m\]$ "
 
 export EDITOR='vim'
 
-# let autocomplete work with sudo
-complete -cf sudo
-
 # Key Bindings
 bind -f ~/.bash_keybindings
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
 
 # Colors
 export GREP_OPTIONS='--color=auto'
@@ -98,8 +91,6 @@ function xt() {
 # GO
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-
-source ~/.git-completion.sh
 
 # postgres.app
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
