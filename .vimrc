@@ -88,6 +88,14 @@ call plug#end()
 
 " == PLUGIN OPTIONS =======================================
 
+colorscheme superman
+
+" Disable netrw
+let loaded_netrwPlugin = 1
+augroup my_dirvish_events
+  autocmd FileType dirvish sort r /[^\/]$/
+augroup END
+
 " Ack
 nnoremap <leader>a :Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
