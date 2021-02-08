@@ -8,6 +8,9 @@ set nocompatible
 set statusline=%f\ []\ %{fugitive#head()}
 set background=dark
 set shell=/usr/local/bin/zsh
+set splitright
+set nobackup
+set noswapfile
 
 " backspace/delete like I'm used to
 set backspace=indent,eol,start
@@ -32,9 +35,6 @@ set clipboard=unnamed
 " disables both audio & visual bell
 set vb t_vb=
 
-" Don't swap in my working directory
-set directory^=$HOME/.vim/swap//
-
 " text selection to not include character under cursor
 set selection=exclusive
 behave mswin
@@ -53,21 +53,11 @@ set wildmenu
 " redraw only when we need to.
 set lazyredraw
 
-" NERDtree like setup for netrw
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
-
 " == PLUGINS ==============================================
 call plug#begin()
 
 "Navigation
+let loaded_netrwPlugin = 1
 Plug 'justinmk/vim-dirvish'
 Plug 'tpope/vim-vinegar'
 
