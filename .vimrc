@@ -57,9 +57,7 @@ set lazyredraw
 call plug#begin()
 
 "Navigation
-let loaded_netrwPlugin = 1
-Plug 'justinmk/vim-dirvish'
-Plug 'tpope/vim-vinegar'
+Plug 'preservim/nerdtree'
 
 " Git
 Plug 'tpope/vim-rhubarb'
@@ -91,9 +89,9 @@ call plug#end()
 
 colorscheme superman
 
-augroup my_dirvish_events
-  autocmd FileType dirvish sort r /[^\/]$/
-augroup END
+" Nerdtree
+noremap  <F2> :NERDTreeToggle<cr>
+inoremap <F2> <esc>:NERDTreeToggle<cr>
 
 " Ack
 nnoremap <leader>a :Ack

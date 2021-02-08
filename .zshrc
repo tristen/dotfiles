@@ -121,3 +121,4 @@ function pngencode() {
   # pngencode = BASE-64 encode an image
   openssl enc -base64 -in $1 | tr -d '\n' | pbcopy
 }
+source "$(npm root -g)/@mapbox/mbxcli/bin/mapbox.sh"
