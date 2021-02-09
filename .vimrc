@@ -70,7 +70,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 
 " Search
-Plug 'mileszs/ack.vim'
+Plug 'mhinz/vim-grepper'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -99,11 +99,13 @@ nmap <leader>f <Plug>(coc-fix-current)
 noremap  <F2> :NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeToggle<cr>
 
-" Ack
-nnoremap <leader>a :Ack
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
+" Grepper
+let g:grepper = {}
+let g:grepper.tools = ['ag']
+let g:grepper.simple_prompt = 1
+let g:grepper.quickfix = 1
+let g:grepper.highlight = 1
+nmap <leader>a :Grepper -tool ag
 
 " == KEY BINDINGS =========================================
 
