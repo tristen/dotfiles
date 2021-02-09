@@ -89,6 +89,11 @@ call plug#end()
 
 colorscheme superman
 
+" coc
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+nmap <leader>c <Plug>(coc-codeaction)
+nmap <leader>f <Plug>(coc-fix-current)
+
 " Nerdtree
 noremap  <F2> :NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeToggle<cr>
