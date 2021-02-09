@@ -11,6 +11,7 @@ set shell=/usr/local/bin/zsh
 set splitright
 set nobackup
 set noswapfile
+set guioptions=r " Only display a scroll bar on the right
 
 " backspace/delete like I'm used to
 set backspace=indent,eol,start
@@ -100,7 +101,9 @@ inoremap <F2> <esc>:NERDTreeToggle<cr>
 
 " Ack
 nnoremap <leader>a :Ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " == KEY BINDINGS =========================================
 
