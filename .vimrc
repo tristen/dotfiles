@@ -7,7 +7,7 @@ set termguicolors
 set nocompatible
 set statusline=%f\ []\ %{fugitive#head()}
 set background=dark
-set shell=/usr/local/bin/zsh
+set shell=/bin/zsh
 set splitright
 set nobackup
 set noswapfile
@@ -80,6 +80,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'pantharshit00/vim-prisma'
 
 " Themes
 Plug 'tristen/superman'
@@ -96,8 +97,11 @@ nmap <leader>c <Plug>(coc-codeaction)
 nmap <leader>f <Plug>(coc-fix-current)
 
 " Nerdtree
+set wildignore+=*.git,*.DS_Store
 noremap  <F2> :NERDTreeToggle<cr>
 inoremap <F2> <esc>:NERDTreeToggle<cr>
+let NERDTreeShowHidden=1
+let NERDTreeRespectWildIgnore=1
 
 " Grepper
 let g:grepper = {}
