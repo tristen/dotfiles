@@ -38,6 +38,7 @@ ssh-keygen -t rsa -b 4096 -C "tristen.brown@gmail.com"
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
+- [ ] [Configure the SSH key to use with SSO](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-an-ssh-key-for-use-with-saml-single-sign-on)
 - [ ] Remove any unused SSH keys from GitHub.
 - [ ] Clone this repo:
 
