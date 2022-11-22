@@ -8,10 +8,11 @@ The folowing steps assumes you are starting from scratch.
 - [ ] Install [brew](http://brew.sh/) and the following:
 
 ```
-brew install hub node cask google-chrome 1password iterm2 nvalt spotify backblaze licecap dropbox slack the_silver_searcher macvim figma itsycal
+brew install hub node cask google-chrome 1password iterm2 nvalt spotify backblaze licecap dropbox slack the_silver_searcher macvim figma itsycal zsh
 ```
 
 - [ ] Install [Node Version Manager](https://github.com/nvm-sh/nvm#installing-and-updating)
+- [ ] Install [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 - [ ] Remap CapsLock to ESC from `System preferences > Keyboard > Modifier Keys...`.
 - [ ] Set the following git globals (replacing my credentials with your own):
 
