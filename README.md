@@ -63,8 +63,7 @@ mkdir ~/.vim/swap ~/dev ~/dev/github ~/dev/mapbox
 npm adduser
 ```
 
-- [ ] [Install Vim Plug](curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
+- [ ] [Install Vim Plug](https://github.com/junegunn/vim-plug#unix)
 - [ ] Run `PlugInstall` in Vim
 
 ```
