@@ -63,15 +63,9 @@ mkdir ~/.vim/swap ~/dev ~/dev/github ~/dev/mapbox
 npm adduser
 ```
 
-- [ ] Install the following globals from npm:
-
-```
-npm install -g eslint serve commitizen
-```
-
+- [ ] Add any desired globals from npm
 - [ ] Add desired Quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
 - [ ] Clone and set up work (Mapbox) commandline tool
-- [ ] Clone Mapbox design repo and install brand fonts
 - [ ] Install a [Native version of Inkscape](http://www.inkscapeforum.com/viewtopic.php?t=23191)
 
 ### Updating
