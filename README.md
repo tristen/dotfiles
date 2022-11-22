@@ -11,6 +11,7 @@ The folowing steps assumes you are starting from scratch.
 brew install hub node cask google-chrome 1password iterm2 nvalt spotify backblaze licecap dropbox slack the_silver_searcher macvim figma itsycal
 ```
 
+- [ ] Install [Node Version Manager](https://github.com/nvm-sh/nvm#installing-and-updating)
 - [ ] Remap CapsLock to ESC from `System preferences > Keyboard > Modifier Keys...`.
 - [ ] Set the following git globals (replacing my credentials with your own):
 
