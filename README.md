@@ -63,6 +63,14 @@ mkdir ~/.vim/swap ~/dev ~/dev/github ~/dev/mapbox
 npm adduser
 ```
 
+- [ ] [Install Vim Plug](curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
+- [ ] Run `PlugInstall` in Vim
+
+```
+:PlugInstall
+```
+
 - [ ] Add any desired globals from npm
 - [ ] Add desired Quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
 - [ ] Clone and set up work (Mapbox) commandline tool
