@@ -95,6 +95,7 @@ colorscheme superman
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 nmap <leader>c <Plug>(coc-codeaction)
 nmap <leader>f <Plug>(coc-fix-current)
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " Nerdtree
 set wildignore+=*.git,*.DS_Store
