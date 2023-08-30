@@ -86,3 +86,5 @@ git submodule foreach 'git pull origin HEAD'
 ./bootstrap.sh
 ```
 
+- [ ] Replace UNIX commands as necessary https://github.com/ibraheemdev/modern-unix
+
