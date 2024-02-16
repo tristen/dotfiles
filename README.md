@@ -26,6 +26,7 @@ git config --global color.ui true
 git config --global alias.up 'pull --rebase --autostash'
 git config --global init.defaultBranch main
 git config --global alias.track '!git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`'
+git config --global rerere.enabled true
 ```
 
 - [ ] Generate a new SSH keypair (replacing my email with your own):
