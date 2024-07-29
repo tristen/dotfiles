@@ -8,7 +8,7 @@ The folowing steps assumes you are starting from scratch.
 - [ ] Install [brew](http://brew.sh/) and the following:
 
 ```
-brew install hub node cask google-chrome 1password iterm2 nvalt spotify backblaze licecap dropbox slack the_silver_searcher macvim figma itsycal nvim zsh the-archive
+brew install hub node cask google-chrome@canary 1password iterm2 spotify backblaze licecap dropbox slack the_silver_searcher macvim figma@beta itsycal nvim zsh the-archive
 ```
 
 - [ ] Install [Node Version Manager](https://github.com/nvm-sh/nvm#installing-and-updating)
